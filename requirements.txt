@@ -1,0 +1,25 @@
+# Core dependencies
+anthropic>=0.18.0
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# For parallel (asyncio) scanning
+aiohttp>=3.9.0
+
+# Optional dependencies for enhanced functionality
+# Uncomment as needed:
+
+# For PDF report generation
+# pdfkit>=1.0.0
+# wkhtmltopdf (system package required)
+
+# For report template rendering
+# jinja2>=3.1.0
+# markdown>=3.5.0
+
+# Development dependencies (install with requirements-dev.txt)
+# pytest>=7.4.0
+# pytest-asyncio>=0.21.0
+# pylint>=3.0.0
+# black>=23.0.0
+# mypy>=1.7.0

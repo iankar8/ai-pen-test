@@ -1,0 +1,190 @@
+{
+  "version": "1.0.0",
+  "cvss_version": "3.1",
+  "severity_levels": {
+    "CRITICAL": {
+      "cvss_range": [9.0, 10.0],
+      "description": "Immediate threat requiring emergency remediation",
+      "response_time": "0-24 hours",
+      "examples": [
+        "Remote code execution",
+        "Authentication bypass with admin access",
+        "Hardcoded credentials in production",
+        "SQL injection in authentication"
+      ],
+      "business_impact": "Severe - Data breach, system compromise, regulatory penalties"
+    },
+    "HIGH": {
+      "cvss_range": [7.0, 8.9],
+      "description": "Significant risk requiring urgent attention",
+      "response_time": "1-7 days",
+      "examples": [
+        "SQL injection (non-auth)",
+        "IDOR exposing PII",
+        "Stored XSS",
+        "Privilege escalation",
+        "SSRF with internal access"
+      ],
+      "business_impact": "High - Data exposure, service disruption, compliance violations"
+    },
+    "MEDIUM": {
+      "cvss_range": [4.0, 6.9],
+      "description": "Moderate risk requiring timely remediation",
+      "response_time": "1-4 weeks",
+      "examples": [
+        "Reflected XSS",
+        "CSRF on state-changing operations",
+        "Information disclosure",
+        "Weak cryptography",
+        "Missing rate limiting"
+      ],
+      "business_impact": "Medium - Limited data exposure, availability impact"
+    },
+    "LOW": {
+      "cvss_range": [0.1, 3.9],
+      "description": "Minor risk for future remediation",
+      "response_time": "1-3 months",
+      "examples": [
+        "Missing security headers",
+        "Verbose error messages",
+        "Outdated dependencies (no known exploits)",
+        "Clickjacking"
+      ],
+      "business_impact": "Low - Minimal direct impact, defense-in-depth improvement"
+    },
+    "INFO": {
+      "cvss_range": [0.0, 0.0],
+      "description": "Informational finding, best practice recommendation",
+      "response_time": "As resources allow",
+      "examples": [
+        "Code quality issues",
+        "Best practice deviations",
+        "Documentation improvements"
+      ],
+      "business_impact": "Negligible - No direct security impact"
+    }
+  },
+  "cvss_metrics": {
+    "attack_vector": {
+      "network": 0.85,
+      "adjacent": 0.62,
+      "local": 0.55,
+      "physical": 0.2
+    },
+    "attack_complexity": {
+      "low": 0.77,
+      "high": 0.44
+    },
+    "privileges_required": {
+      "none": 0.85,
+      "low": 0.62,
+      "high": 0.27
+    },
+    "user_interaction": {
+      "none": 0.85,
+      "required": 0.62
+    },
+    "scope": {
+      "unchanged": 1.0,
+      "changed": 1.08
+    },
+    "confidentiality": {
+      "high": 0.56,
+      "low": 0.22,
+      "none": 0.0
+    },
+    "integrity": {
+      "high": 0.56,
+      "low": 0.22,
+      "none": 0.0
+    },
+    "availability": {
+      "high": 0.56,
+      "low": 0.22,
+      "none": 0.0
+    }
+  },
+  "vulnerability_type_severity_mapping": {
+    "sql_injection": {
+      "default": "CRITICAL",
+      "with_auth": "HIGH",
+      "read_only": "HIGH"
+    },
+    "xss_stored": {
+      "default": "HIGH",
+      "admin_context": "CRITICAL"
+    },
+    "xss_reflected": {
+      "default": "MEDIUM",
+      "no_user_interaction": "HIGH"
+    },
+    "rce": {
+      "default": "CRITICAL"
+    },
+    "authentication_bypass": {
+      "default": "CRITICAL"
+    },
+    "idor": {
+      "default": "HIGH",
+      "pii_exposure": "HIGH",
+      "public_data": "MEDIUM"
+    },
+    "ssrf": {
+      "default": "HIGH",
+      "cloud_metadata_access": "CRITICAL"
+    },
+    "xxe": {
+      "default": "HIGH"
+    },
+    "csrf": {
+      "default": "MEDIUM",
+      "state_changing": "HIGH"
+    },
+    "path_traversal": {
+      "default": "HIGH",
+      "read_only": "MEDIUM"
+    },
+    "weak_crypto": {
+      "default": "MEDIUM",
+      "password_storage": "CRITICAL"
+    },
+    "hardcoded_secrets": {
+      "default": "CRITICAL",
+      "test_environment": "LOW"
+    },
+    "missing_security_headers": {
+      "default": "LOW"
+    },
+    "information_disclosure": {
+      "default": "MEDIUM",
+      "sensitive_data": "HIGH"
+    }
+  },
+  "context_modifiers": {
+    "production_environment": {
+      "multiplier": 1.2,
+      "description": "Increase severity in production"
+    },
+    "test_environment": {
+      "multiplier": 0.8,
+      "description": "Reduce severity in test/dev"
+    },
+    "pii_data": {
+      "multiplier": 1.3,
+      "description": "Increase severity for PII exposure"
+    },
+    "publicly_accessible": {
+      "multiplier": 1.2,
+      "description": "Increase severity for public endpoints"
+    },
+    "authenticated_only": {
+      "multiplier": 0.9,
+      "description": "Slight reduction if authentication required"
+    },
+    "requires_privileged_access": {
+      "multiplier": 0.7,
+      "description": "Reduce if admin/privileged access needed"
+    }
+  }
+}
+

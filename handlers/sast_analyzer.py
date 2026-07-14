@@ -602,7 +602,7 @@ You MUST avoid these common false positives:
         Note this executes the Codex *agent* around the prompt, not a raw single-turn
         completion — see benchmark/README for the labeling caveat.
         """
-        import shutil, subprocess
+        import shutil, subprocess, tempfile, os as _os
         codex_bin = shutil.which("codex")
         if not codex_bin:
             raise RuntimeError(
@@ -613,18 +613,38 @@ You MUST avoid these common false positives:
             f"{prompt}\n\nAnalyze this code for security vulnerabilities and return "
             f"ONLY the JSON described above, no prose:\n\n```\n{code_content}\n```"
         )
-        # Headless, non-interactive, no tool use / file writes, read-only sandbox.
-        cmd = [codex_bin, "exec", "-m", self.model,
-               "--sandbox", "read-only", "--skip-git-repo-check", full_prompt]
-        proc = subprocess.run(
-            cmd, capture_output=True, text=True, timeout=self.timeout * 60
-        )
-        if proc.returncode != 0:
-            raise RuntimeError(
-                f"codex exec failed (exit {proc.returncode}): {proc.stderr.strip()[:400]}"
+        # --ignore-user-config is REQUIRED: it skips the user's Codex hooks and
+        # config so (a) their prompt-time context is NOT injected into the analysis
+        # (benchmark contamination) and (b) it doesn't hang on hook execution.
+        # -o writes only the final agent message; --ephemeral leaves no session on disk.
+        with tempfile.NamedTemporaryFile("r", suffix=".txt", delete=False) as tf:
+            out_path = tf.name
+        try:
+            # --disable plugins/plugin_sharing/remote_plugin roughly halves per-call
+            # token overhead (~13.7k -> ~6.6k). The ~129 runtime skills can't be
+            # stripped further, so ~6.6k is the floor.
+            cmd = [codex_bin, "exec", "-m", self.model,
+                   "--ignore-user-config", "--ephemeral",
+                   "--disable", "plugins", "--disable", "plugin_sharing",
+                   "--disable", "remote_plugin",
+                   "-s", "read-only", "--skip-git-repo-check",
+                   "-o", out_path, full_prompt]
+            proc = subprocess.run(
+                cmd, capture_output=True, text=True, timeout=self.timeout * 60
             )
-        # codex exec prints the assistant turn to stdout; _parse_findings extracts the JSON.
-        return proc.stdout
+            if proc.returncode != 0:
+                raise RuntimeError(
+                    f"codex exec failed (exit {proc.returncode}): {proc.stderr.strip()[:400]}"
+                )
+            with open(out_path) as fh:
+                answer = fh.read()
+            # Fall back to stdout if -o produced nothing (older/newer CLI variance).
+            return answer if answer.strip() else proc.stdout
+        finally:
+            try:
+                _os.unlink(out_path)
+            except OSError:
+                pass
 
     def _call_claude_analysis(self, prompt: str, code_content: str) -> str:
         """Call LLM API for code analysis"""

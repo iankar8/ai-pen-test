@@ -105,23 +105,62 @@ def run_mock(files: List[str], target_root: Optional[str]) -> List[Dict[str, Any
 
 
 def run_real(files: List[str], target_root: Optional[str], model: str,
-             api_key: Optional[str], backend: str = "openrouter") -> List[Dict[str, Any]]:
-    """Call the SHIPPED engine per file. openrouter needs a key; codex needs the CLI."""
+             api_key: Optional[str], backend: str = "openrouter",
+             checkpoint_path: Optional[str] = None) -> List[Dict[str, Any]]:
+    """
+    Call the SHIPPED engine per file. openrouter needs a key; codex needs the CLI.
+
+    Resilient for long unattended runs: each file is isolated (one failure logs and
+    continues, it does not abort the run), and results are checkpointed to
+    checkpoint_path after every file so a killed/rate-limited run RESUMES on re-invoke
+    (already-done files are skipped). Files that error are recorded with an "error"
+    marker so they are not silently retried forever — delete their entry to retry.
+    """
+    import json as _json, time as _time
     from handlers.sast_analyzer import SASTAnalyzer
 
     analyzer = SASTAnalyzer(model=model, api_key=api_key,
                             use_openrouter=(backend == "openrouter"), backend=backend)
+
+    done: Dict[str, Any] = {}
+    if checkpoint_path and os.path.exists(checkpoint_path):
+        try:
+            done = _json.load(open(checkpoint_path))
+            print(f"[ai-pen-test] resuming: {len(done)} of {len(files)} files already in checkpoint")
+        except Exception:
+            done = {}
+
+    total = len(files)
+    for i, f in enumerate(files, 1):
+        key = rel_path(f, target_root)
+        if key in done:
+            continue
+        t0 = _time.time()
+        try:
+            engine_findings = analyzer._analyze_file(f, None)
+            done[key] = [
+                make_finding(rel_path(ef.file, target_root), ef.line, ef.cwe, ef.severity, rule_id=ef.id)
+                for ef in engine_findings
+            ]
+            print(f"[{i}/{total}] {key}: {len(done[key])} findings ({round(_time.time()-t0)}s)")
+        except Exception as e:  # one bad file (rate limit, timeout) must not kill the run
+            done[key] = {"error": str(e)[:300]}
+            print(f"[{i}/{total}] {key}: ERROR ({round(_time.time()-t0)}s) — {str(e)[:120]}")
+        if checkpoint_path:
+            tmp = checkpoint_path + ".tmp"
+            _json.dump(done, open(tmp, "w"))
+            os.replace(tmp, checkpoint_path)
+
     findings: List[Dict[str, Any]] = []
-    for f in files:
-        engine_findings = analyzer._analyze_file(f, None)
-        for ef in engine_findings:
-            findings.append(make_finding(
-                rel_path(ef.file, target_root),
-                ef.line,
-                ef.cwe,
-                ef.severity,
-                rule_id=ef.id,
-            ))
+    n_err = 0
+    for v in done.values():
+        if isinstance(v, dict) and "error" in v:
+            n_err += 1
+        else:
+            findings.extend(v)
+    if n_err:
+        print(f"[ai-pen-test] {n_err} file(s) errored and were skipped (see checkpoint). "
+              f"Re-run the same command to retry only those, or leave them out.")
     return findings
 
 
@@ -163,7 +202,8 @@ def main() -> None:
         dry = True
     else:
         print(f"[ai-pen-test] REAL mode (backend={args.backend}): invoking shipped SASTAnalyzer on {len(files)} files.")
-        findings = run_real(files, target_root, args.model, api_key, args.backend)
+        _ckpt = (args.out or "ai_pen_test") + ".ckpt.json"
+        findings = run_real(files, target_root, args.model, api_key, args.backend, checkpoint_path=_ckpt)
         config = f"SASTAnalyzer(model={args.model}, backend={args.backend})"
         invocation = f"ai_pen_test_runner.py --model {args.model} --backend {args.backend} over {len(files)} files"
         dry = False

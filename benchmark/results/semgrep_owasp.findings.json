@@ -1,0 +1,2470 @@
+{
+  "tool": "semgrep",
+  "tool_version": "1.169.0",
+  "config": "semgrep --config auto (Community Edition / CE; no Pro engine, no cross-file)",
+  "edition": "CE",
+  "target_root": "/Users/iankar/ai-pen-test/benchmark/datasets/BenchmarkJava",
+  "invocation": "semgrep --config auto --json (metrics=on (required by auto)) <400 targets>",
+  "timestamp": "2026-07-14T00:12:26.015869+00:00",
+  "dry_run": false,
+  "finding_count": 351,
+  "findings": [
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00001.java",
+      "line": 72,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00006.java",
+      "line": 62,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00006.java",
+      "line": 66,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.command-injection-process-builder.command-injection-process-builder"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00013.java",
+      "line": 56,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00017.java",
+      "line": 63,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00031.java",
+      "line": 52,
+      "cwe": 501,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.tainted-session-from-http-request.tainted-session-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00031.java",
+      "line": 54,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00040.java",
+      "line": 49,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00063.java",
+      "line": 78,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00084.java",
+      "line": 70,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00102.java",
+      "line": 73,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00103.java",
+      "line": 76,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00104.java",
+      "line": 76,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00113.java",
+      "line": 79,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.jdbc-sqli.jdbc-sqli"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00123.java",
+      "line": 64,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00123.java",
+      "line": 67,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.desede-is-deprecated.desede-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00123.java",
+      "line": 67,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00131.java",
+      "line": 72,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00148.java",
+      "line": 60,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00150.java",
+      "line": 60,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00158.java",
+      "line": 68,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00158.java",
+      "line": 70,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.command-injection-process-builder.command-injection-process-builder"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00163.java",
+      "line": 54,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00166.java",
+      "line": 53,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00193.java",
+      "line": 63,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00194.java",
+      "line": 63,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00196.java",
+      "line": 61,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00203.java",
+      "line": 61,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00203.java",
+      "line": 63,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.jdbc-sqli.jdbc-sqli"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00219.java",
+      "line": 73,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00237.java",
+      "line": 82,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00240.java",
+      "line": 65,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00256.java",
+      "line": 79,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.desede-is-deprecated.desede-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00256.java",
+      "line": 79,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00263.java",
+      "line": 79,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00268.java",
+      "line": 61,
+      "cwe": 328,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.use-of-sha1.use-of-sha1"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00272.java",
+      "line": 75,
+      "cwe": 328,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.use-of-md5.use-of-md5"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00284.java",
+      "line": 56,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00291.java",
+      "line": 59,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00292.java",
+      "line": 62,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00310.java",
+      "line": 84,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00325.java",
+      "line": 56,
+      "cwe": 501,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.tainted-session-from-http-request.tainted-session-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00341.java",
+      "line": 63,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00354.java",
+      "line": 63,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.desede-is-deprecated.desede-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00354.java",
+      "line": 63,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00362.java",
+      "line": 54,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00362.java",
+      "line": 67,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00375.java",
+      "line": 51,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00390.java",
+      "line": 56,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00393.java",
+      "line": 54,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00406.java",
+      "line": 74,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00408.java",
+      "line": 76,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00424.java",
+      "line": 56,
+      "cwe": 501,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.tainted-session-from-http-request.tainted-session-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00424.java",
+      "line": 58,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00426.java",
+      "line": 56,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00440.java",
+      "line": 59,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.jdbc-sqli.jdbc-sqli"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00448.java",
+      "line": 65,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.desede-is-deprecated.desede-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00448.java",
+      "line": 65,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00459.java",
+      "line": 65,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00459.java",
+      "line": 78,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00461.java",
+      "line": 52,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00476.java",
+      "line": 58,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00486.java",
+      "line": 52,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00497.java",
+      "line": 80,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00500.java",
+      "line": 67,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00547.java",
+      "line": 65,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00549.java",
+      "line": 68,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00553.java",
+      "line": 82,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00563.java",
+      "line": 62,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00564.java",
+      "line": 63,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00565.java",
+      "line": 79,
+      "cwe": 614,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.cookie-missing-secure-flag.cookie-missing-secure-flag"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00606.java",
+      "line": 70,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00606.java",
+      "line": 72,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.jdbc-sqli.jdbc-sqli"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00610.java",
+      "line": 87,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.desede-is-deprecated.desede-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00610.java",
+      "line": 87,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00622.java",
+      "line": 69,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00636.java",
+      "line": 51,
+      "cwe": 328,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.use-of-sha1.use-of-sha1"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00637.java",
+      "line": 56,
+      "cwe": 328,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.use-of-md5.use-of-md5"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00653.java",
+      "line": 55,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00658.java",
+      "line": 64,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00659.java",
+      "line": 79,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00692.java",
+      "line": 61,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00692.java",
+      "line": 64,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.desede-is-deprecated.desede-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00692.java",
+      "line": 64,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00694.java",
+      "line": 60,
+      "cwe": 90,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.tainted-ldapi-from-http-request.tainted-ldapi-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00697.java",
+      "line": 57,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00700.java",
+      "line": 63,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00700.java",
+      "line": 76,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00712.java",
+      "line": 59,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00719.java",
+      "line": 54,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00724.java",
+      "line": 70,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00727.java",
+      "line": 54,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00731.java",
+      "line": 60,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00731.java",
+      "line": 62,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.command-injection-process-builder.command-injection-process-builder"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00732.java",
+      "line": 68,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.command-injection-process-builder.command-injection-process-builder"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00733.java",
+      "line": 51,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00734.java",
+      "line": 69,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00736.java",
+      "line": 72,
+      "cwe": 614,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.cookie-missing-secure-flag.cookie-missing-secure-flag"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00739.java",
+      "line": 78,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00772.java",
+      "line": 74,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.jdbc-sqli.jdbc-sqli"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00772.java",
+      "line": 74,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00784.java",
+      "line": 96,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00788.java",
+      "line": 80,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00788.java",
+      "line": 93,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00810.java",
+      "line": 74,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00814.java",
+      "line": 87,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00814.java",
+      "line": 91,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.command-injection-process-builder.command-injection-process-builder"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00822.java",
+      "line": 78,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00833.java",
+      "line": 78,
+      "cwe": 501,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.tainted-session-from-http-request.tainted-session-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00833.java",
+      "line": 80,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00847.java",
+      "line": 87,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.jdbc-sqli.jdbc-sqli"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00851.java",
+      "line": 80,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00851.java",
+      "line": 82,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.jdbc-sqli.jdbc-sqli"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00859.java",
+      "line": 62,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.desede-is-deprecated.desede-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00859.java",
+      "line": 62,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00956.java",
+      "line": 79,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00959.java",
+      "line": 82,
+      "cwe": 90,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.tainted-ldapi-from-http-request.tainted-ldapi-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00963.java",
+      "line": 69,
+      "cwe": 328,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.use-of-md5.use-of-md5"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00973.java",
+      "line": 68,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00996.java",
+      "line": 74,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01005.java",
+      "line": 71,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01052.java",
+      "line": 55,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01068.java",
+      "line": 63,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01083.java",
+      "line": 58,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01085.java",
+      "line": 56,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01087.java",
+      "line": 58,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01087.java",
+      "line": 61,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01091.java",
+      "line": 58,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.jdbc-sqli.jdbc-sqli"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01091.java",
+      "line": 58,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01093.java",
+      "line": 58,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.jdbc-sqli.jdbc-sqli"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01093.java",
+      "line": 58,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01094.java",
+      "line": 58,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.jdbc-sqli.jdbc-sqli"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01094.java",
+      "line": 58,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01102.java",
+      "line": 74,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01102.java",
+      "line": 77,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.desede-is-deprecated.desede-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01102.java",
+      "line": 77,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01103.java",
+      "line": 74,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01103.java",
+      "line": 77,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.desede-is-deprecated.desede-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01103.java",
+      "line": 77,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01143.java",
+      "line": 64,
+      "cwe": 501,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.tainted-session-from-http-request.tainted-session-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01143.java",
+      "line": 66,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01156.java",
+      "line": 72,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01176.java",
+      "line": 57,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01180.java",
+      "line": 56,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01212.java",
+      "line": 60,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01221.java",
+      "line": 58,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01221.java",
+      "line": 60,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.jdbc-sqli.jdbc-sqli"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01225.java",
+      "line": 70,
+      "cwe": 643,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.tainted-xpath-from-http-request.tainted-xpath-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01225.java",
+      "line": 72,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01229.java",
+      "line": 59,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01229.java",
+      "line": 62,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.desede-is-deprecated.desede-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01229.java",
+      "line": 62,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01244.java",
+      "line": 54,
+      "cwe": 328,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.use-of-sha1.use-of-sha1"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01244.java",
+      "line": 56,
+      "cwe": 328,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.use-of-sha1.use-of-sha1"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01246.java",
+      "line": 49,
+      "cwe": 328,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.use-of-sha1.use-of-sha1"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01259.java",
+      "line": 50,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01273.java",
+      "line": 48,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01275.java",
+      "line": 48,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01279.java",
+      "line": 48,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01285.java",
+      "line": 57,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01299.java",
+      "line": 49,
+      "cwe": 501,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.tainted-session-from-http-request.tainted-session-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01299.java",
+      "line": 51,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01302.java",
+      "line": 53,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01303.java",
+      "line": 53,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01306.java",
+      "line": 53,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01312.java",
+      "line": 53,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.jdbc-sqli.jdbc-sqli"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01312.java",
+      "line": 53,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01320.java",
+      "line": 66,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.desede-is-deprecated.desede-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01320.java",
+      "line": 66,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01325.java",
+      "line": 60,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.desede-is-deprecated.desede-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01325.java",
+      "line": 60,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01341.java",
+      "line": 54,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01348.java",
+      "line": 53,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01360.java",
+      "line": 61,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01380.java",
+      "line": 57,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01393.java",
+      "line": 55,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01393.java",
+      "line": 57,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.jdbc-sqli.jdbc-sqli"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01397.java",
+      "line": 67,
+      "cwe": 643,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.tainted-xpath-from-http-request.tainted-xpath-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01397.java",
+      "line": 69,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01398.java",
+      "line": 76,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.desede-is-deprecated.desede-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01398.java",
+      "line": 76,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01406.java",
+      "line": 67,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01423.java",
+      "line": 64,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01428.java",
+      "line": 63,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01446.java",
+      "line": 72,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01465.java",
+      "line": 65,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01468.java",
+      "line": 65,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01493.java",
+      "line": 50,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01495.java",
+      "line": 70,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01497.java",
+      "line": 56,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01497.java",
+      "line": 69,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01499.java",
+      "line": 56,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01499.java",
+      "line": 69,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01526.java",
+      "line": 59,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01568.java",
+      "line": 60,
+      "cwe": 90,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.tainted-ldapi-from-http-request.tainted-ldapi-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01572.java",
+      "line": 55,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01577.java",
+      "line": 51,
+      "cwe": 328,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.use-of-md5.use-of-md5"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01583.java",
+      "line": 54,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01595.java",
+      "line": 51,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01600.java",
+      "line": 60,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01600.java",
+      "line": 64,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.command-injection-process-builder.command-injection-process-builder"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01609.java",
+      "line": 60,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01631.java",
+      "line": 53,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01631.java",
+      "line": 55,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.jdbc-sqli.jdbc-sqli"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01633.java",
+      "line": 65,
+      "cwe": 643,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.tainted-xpath-from-http-request.tainted-xpath-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01633.java",
+      "line": 67,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01649.java",
+      "line": 73,
+      "cwe": 328,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.use-of-sha1.use-of-sha1"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01662.java",
+      "line": 74,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01664.java",
+      "line": 73,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01673.java",
+      "line": 82,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01673.java",
+      "line": 84,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.command-injection-process-builder.command-injection-process-builder"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01687.java",
+      "line": 95,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01690.java",
+      "line": 80,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01710.java",
+      "line": 73,
+      "cwe": 501,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.tainted-session-from-http-request.tainted-session-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01710.java",
+      "line": 75,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01715.java",
+      "line": 77,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01716.java",
+      "line": 77,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01718.java",
+      "line": 77,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01723.java",
+      "line": 77,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01723.java",
+      "line": 80,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01743.java",
+      "line": 60,
+      "cwe": 90,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.tainted-ldapi-from-http-request.tainted-ldapi-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01745.java",
+      "line": 49,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01753.java",
+      "line": 63,
+      "cwe": 90,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.tainted-ldapi-from-http-request.tainted-ldapi-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01779.java",
+      "line": 63,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.command-injection-process-builder.command-injection-process-builder"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01781.java",
+      "line": 49,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01816.java",
+      "line": 54,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.jdbc-sqli.jdbc-sqli"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01823.java",
+      "line": 84,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.desede-is-deprecated.desede-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01823.java",
+      "line": 84,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01829.java",
+      "line": 76,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.desede-is-deprecated.desede-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01829.java",
+      "line": 76,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01831.java",
+      "line": 79,
+      "cwe": 90,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.tainted-ldapi-from-http-request.tainted-ldapi-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01850.java",
+      "line": 78,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01850.java",
+      "line": 80,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.command-injection-process-builder.command-injection-process-builder"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01854.java",
+      "line": 68,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01855.java",
+      "line": 68,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01858.java",
+      "line": 68,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01859.java",
+      "line": 68,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01865.java",
+      "line": 78,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01873.java",
+      "line": 69,
+      "cwe": 501,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.tainted-session-from-http-request.tainted-session-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01873.java",
+      "line": 71,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01874.java",
+      "line": 71,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01884.java",
+      "line": 71,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01889.java",
+      "line": 71,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01889.java",
+      "line": 73,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.jdbc-sqli.jdbc-sqli"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01897.java",
+      "line": 64,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01897.java",
+      "line": 67,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.desede-is-deprecated.desede-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01897.java",
+      "line": 67,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01898.java",
+      "line": 64,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01898.java",
+      "line": 67,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.desede-is-deprecated.desede-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01898.java",
+      "line": 67,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01904.java",
+      "line": 53,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01905.java",
+      "line": 58,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01917.java",
+      "line": 54,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01921.java",
+      "line": 55,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01924.java",
+      "line": 55,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01930.java",
+      "line": 53,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01936.java",
+      "line": 62,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01966.java",
+      "line": 56,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01974.java",
+      "line": 70,
+      "cwe": 643,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.tainted-xpath-from-http-request.tainted-xpath-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01974.java",
+      "line": 77,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01999.java",
+      "line": 64,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02033.java",
+      "line": 61,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02033.java",
+      "line": 74,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02048.java",
+      "line": 57,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02052.java",
+      "line": 57,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02057.java",
+      "line": 59,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02061.java",
+      "line": 55,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02070.java",
+      "line": 61,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02104.java",
+      "line": 59,
+      "cwe": 90,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.tainted-ldapi-from-http-request.tainted-ldapi-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02115.java",
+      "line": 62,
+      "cwe": 90,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.tainted-ldapi-from-http-request.tainted-ldapi-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02117.java",
+      "line": 48,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02125.java",
+      "line": 49,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02131.java",
+      "line": 50,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02138.java",
+      "line": 49,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02142.java",
+      "line": 65,
+      "cwe": 614,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.cookie-missing-secure-flag.cookie-missing-secure-flag"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02146.java",
+      "line": 57,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02155.java",
+      "line": 54,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02166.java",
+      "line": 49,
+      "cwe": 501,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.tainted-session-from-http-request.tainted-session-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02166.java",
+      "line": 51,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02167.java",
+      "line": 49,
+      "cwe": 501,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.tainted-session-from-http-request.tainted-session-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02167.java",
+      "line": 51,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02170.java",
+      "line": 53,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02173.java",
+      "line": 53,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02179.java",
+      "line": 52,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02179.java",
+      "line": 55,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02183.java",
+      "line": 51,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02189.java",
+      "line": 65,
+      "cwe": 643,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.tainted-xpath-from-http-request.tainted-xpath-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02189.java",
+      "line": 72,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02211.java",
+      "line": 53,
+      "cwe": 328,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.use-of-sha1.use-of-sha1"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02212.java",
+      "line": 53,
+      "cwe": 328,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.use-of-sha1.use-of-sha1"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02223.java",
+      "line": 54,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02234.java",
+      "line": 54,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02240.java",
+      "line": 53,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02261.java",
+      "line": 55,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02266.java",
+      "line": 57,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02276.java",
+      "line": 57,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02276.java",
+      "line": 60,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02278.java",
+      "line": 56,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02278.java",
+      "line": 59,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02281.java",
+      "line": 55,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02283.java",
+      "line": 57,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.jdbc-sqli.jdbc-sqli"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02283.java",
+      "line": 57,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02284.java",
+      "line": 57,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.jdbc-sqli.jdbc-sqli"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02284.java",
+      "line": 57,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02293.java",
+      "line": 73,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02293.java",
+      "line": 76,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.desede-is-deprecated.desede-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02293.java",
+      "line": 76,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02294.java",
+      "line": 73,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02294.java",
+      "line": 76,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.desede-is-deprecated.desede-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02294.java",
+      "line": 76,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.des-is-deprecated.des-is-deprecated"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02301.java",
+      "line": 62,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02319.java",
+      "line": 63,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02333.java",
+      "line": 72,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02333.java",
+      "line": 76,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.command-injection-process-builder.command-injection-process-builder"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02367.java",
+      "line": 67,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.jdbc-sqli.jdbc-sqli"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02367.java",
+      "line": 67,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02376.java",
+      "line": 61,
+      "cwe": 90,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.tainted-ldapi-from-http-request.tainted-ldapi-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02413.java",
+      "line": 64,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.command-injection-process-builder.command-injection-process-builder"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02417.java",
+      "line": 50,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02429.java",
+      "line": 71,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02462.java",
+      "line": 50,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02468.java",
+      "line": 61,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02473.java",
+      "line": 50,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02475.java",
+      "line": 51,
+      "cwe": 328,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.use-of-md5.use-of-md5"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02476.java",
+      "line": 51,
+      "cwe": 328,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.use-of-md5.use-of-md5"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02486.java",
+      "line": 52,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02489.java",
+      "line": 52,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02493.java",
+      "line": 54,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02499.java",
+      "line": 50,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02509.java",
+      "line": 51,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02531.java",
+      "line": 55,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02534.java",
+      "line": 55,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02542.java",
+      "line": 55,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.jdbc-sqli.jdbc-sqli"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02542.java",
+      "line": 55,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02546.java",
+      "line": 53,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02546.java",
+      "line": 55,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.jdbc-sqli.jdbc-sqli"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02559.java",
+      "line": 89,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02562.java",
+      "line": 77,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02564.java",
+      "line": 78,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02564.java",
+      "line": 91,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "java.lang.security.httpservlet-path-traversal.httpservlet-path-traversal"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02592.java",
+      "line": 74,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02595.java",
+      "line": 73,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02630.java",
+      "line": 77,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02642.java",
+      "line": 75,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02646.java",
+      "line": 75,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.sqli.tainted-sql-from-http-request.tainted-sql-from-http-request"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02675.java",
+      "line": 50,
+      "cwe": 328,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.use-of-md5.use-of-md5"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02705.java",
+      "line": 49,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02706.java",
+      "line": 49,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02708.java",
+      "line": 49,
+      "cwe": 330,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.crypto.weak-random.weak-random"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02709.java",
+      "line": 66,
+      "cwe": 614,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.cookie-missing-secure-flag.cookie-missing-secure-flag"
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02710.java",
+      "line": 66,
+      "cwe": 614,
+      "severity": "WARNING",
+      "rule_id": "java.lang.security.audit.cookie-missing-secure-flag.cookie-missing-secure-flag"
+    }
+  ]
+}

@@ -87,11 +87,12 @@ class SASTAnalyzer:
         timeout_minutes: int = 20,
         api_key: Optional[str] = None,
         use_openrouter: bool = True,
-        crypto_aggressive_mode: bool = True
+        crypto_aggressive_mode: bool = True,
+        backend: str = "openrouter"
     ):
         """
         Initialize SAST analyzer.
-        
+
         Args:
             model: Model to use ('claude', 'gpt4o', etc. if use_openrouter=True,
                    or full Anthropic model name if use_openrouter=False)
@@ -99,13 +100,22 @@ class SASTAnalyzer:
             api_key: API key (OpenRouter or Anthropic depending on use_openrouter)
             use_openrouter: If True, use OpenRouter multi-LLM. If False, use direct Anthropic
             crypto_aggressive_mode: If True, flag all weak hash usage (higher recall, some FP)
+            backend: 'openrouter' (default, metered API) or 'codex' (route the LLM call
+                     through the Codex CLI so it bills to a ChatGPT/Codex subscription
+                     instead of API credits). 'codex' requires the `codex` CLI installed
+                     and signed in with ChatGPT; `model` is passed to `codex exec -m`.
         """
         self.model = model
         self.timeout = timeout_minutes
+        self.backend = backend
         self.use_openrouter = use_openrouter
         self.crypto_aggressive_mode = crypto_aggressive_mode
-        
-        if use_openrouter:
+
+        if backend == "codex":
+            # LLM call is shelled out to the Codex CLI (subscription auth); no HTTP client.
+            self.llm = None
+            self.client = None
+        elif use_openrouter:
             # Use new LLM Provider with OpenRouter
             self.llm = LLMProvider(primary_model=model, api_key=api_key)
             self.client = None  # Legacy client not used
@@ -582,9 +592,46 @@ You MUST avoid these common false positives:
         
         return rules
     
+    def _call_codex(self, prompt: str, code_content: str) -> str:
+        """
+        Route the analysis through the Codex CLI so it bills to a ChatGPT/Codex
+        subscription instead of API credits. Runs `codex exec` headless (no tools,
+        read-only sandbox) and returns the model's raw text answer for _parse_findings.
+
+        Requires: `codex` on PATH, signed in with ChatGPT (`~/.codex/auth.json`).
+        Note this executes the Codex *agent* around the prompt, not a raw single-turn
+        completion — see benchmark/README for the labeling caveat.
+        """
+        import shutil, subprocess
+        codex_bin = shutil.which("codex")
+        if not codex_bin:
+            raise RuntimeError(
+                "backend='codex' needs the Codex CLI on PATH, signed in with ChatGPT. "
+                "Run `codex login` first, or use backend='openrouter' with an API key."
+            )
+        full_prompt = (
+            f"{prompt}\n\nAnalyze this code for security vulnerabilities and return "
+            f"ONLY the JSON described above, no prose:\n\n```\n{code_content}\n```"
+        )
+        # Headless, non-interactive, no tool use / file writes, read-only sandbox.
+        cmd = [codex_bin, "exec", "-m", self.model,
+               "--sandbox", "read-only", "--skip-git-repo-check", full_prompt]
+        proc = subprocess.run(
+            cmd, capture_output=True, text=True, timeout=self.timeout * 60
+        )
+        if proc.returncode != 0:
+            raise RuntimeError(
+                f"codex exec failed (exit {proc.returncode}): {proc.stderr.strip()[:400]}"
+            )
+        # codex exec prints the assistant turn to stdout; _parse_findings extracts the JSON.
+        return proc.stdout
+
     def _call_claude_analysis(self, prompt: str, code_content: str) -> str:
         """Call LLM API for code analysis"""
-        
+
+        if self.backend == "codex":
+            return self._call_codex(prompt, code_content)
+
         if self.use_openrouter and self.llm:
             # Use new LLM Provider (OpenRouter multi-LLM)
             result = self.llm.analyze_code(

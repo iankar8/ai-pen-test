@@ -1,0 +1,122 @@
+{
+  "tool": "ai_pen_test_DRYRUN",
+  "dataset": "securityeval",
+  "n_runs": 3,
+  "run_files": [
+    "benchmark/results/ai_pen_test_DRYRUN_securityeval.run1.findings.json",
+    "benchmark/results/ai_pen_test_DRYRUN_securityeval.run2.findings.json",
+    "benchmark/results/ai_pen_test_DRYRUN_securityeval.run3.findings.json"
+  ],
+  "granularity": "file_cwe",
+  "overall_mean_range": {
+    "precision": {
+      "mean": null,
+      "min": null,
+      "max": null,
+      "runs_defined": 0,
+      "note": "undefined in all runs"
+    },
+    "recall": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "runs_defined": 3
+    },
+    "f1": {
+      "mean": null,
+      "min": null,
+      "max": null,
+      "runs_defined": 0,
+      "note": "undefined in all runs"
+    },
+    "tpr": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "runs_defined": 3
+    },
+    "fpr": {
+      "mean": null,
+      "min": null,
+      "max": null,
+      "runs_defined": 0,
+      "note": "undefined in all runs"
+    },
+    "youden": {
+      "mean": null,
+      "min": null,
+      "max": null,
+      "runs_defined": 0,
+      "note": "undefined in all runs"
+    }
+  },
+  "per_cwe_recall_mean_range": {
+    "90": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "runs_defined": 3
+    },
+    "116": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "runs_defined": 3
+    },
+    "250": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "runs_defined": 3
+    },
+    "319": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "runs_defined": 3
+    },
+    "329": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "runs_defined": 3
+    },
+    "385": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "runs_defined": 3
+    },
+    "502": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "runs_defined": 3
+    },
+    "759": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "runs_defined": 3
+    },
+    "841": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "runs_defined": 3
+    },
+    "941": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "runs_defined": 3
+    }
+  },
+  "finding_stability": {
+    "stability": 1.0,
+    "in_all": 8,
+    "in_any": 8,
+    "note": "8 of 8 distinct (file,CWE) findings appeared in all 3 runs"
+  },
+  "note": "mean +/- [min,max] across runs; recall is the metric reported per CWE because SecurityEval is recall-only. Any metric undefined in a run (null) is excluded from that run's aggregate, not counted as 0."
+}

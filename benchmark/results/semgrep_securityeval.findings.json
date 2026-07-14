@@ -1,0 +1,426 @@
+{
+  "tool": "semgrep",
+  "tool_version": "1.169.0",
+  "config": "semgrep --config auto (Community Edition / CE; no Pro engine, no cross-file)",
+  "edition": "CE",
+  "target_root": "/Users/iankar/ai-pen-test/benchmark/datasets/SecurityEval",
+  "invocation": "semgrep --config auto --json (metrics=on (required by auto)) <121 targets>",
+  "timestamp": "2026-07-14T00:12:35.760794+00:00",
+  "dry_run": false,
+  "finding_count": 59,
+  "findings": [
+    {
+      "file": "Testcases_Insecure_Code/CWE-020/codeql_1.py",
+      "line": 10,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "python.flask.security.audit.xss.make-response-with-unknown-content.make-response-with-unknown-content"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-020/codeql_2.py",
+      "line": 15,
+      "cwe": 502,
+      "severity": "ERROR",
+      "rule_id": "python.flask.security.insecure-deserialization.insecure-deserialization"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-020/codeql_2.py",
+      "line": 15,
+      "cwe": 502,
+      "severity": "WARNING",
+      "rule_id": "python.lang.security.deserialization.pickle.avoid-pickle"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-020/codeql_3.py",
+      "line": 14,
+      "cwe": 601,
+      "severity": "ERROR",
+      "rule_id": "python.flask.security.open-redirect.open-redirect"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-020/codeql_4.py",
+      "line": 11,
+      "cwe": 601,
+      "severity": "ERROR",
+      "rule_id": "python.flask.security.open-redirect.open-redirect"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-022/author_2.py",
+      "line": 8,
+      "cwe": 939,
+      "severity": "WARNING",
+      "rule_id": "python.lang.security.audit.dynamic-urllib-use-detected.dynamic-urllib-use-detected"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-022/codeql_1.py",
+      "line": 12,
+      "cwe": 22,
+      "severity": "WARNING",
+      "rule_id": "python.django.security.injection.path-traversal.path-traversal-open.path-traversal-open"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-022/codeql_1.py",
+      "line": 13,
+      "cwe": 22,
+      "severity": "ERROR",
+      "rule_id": "python.flask.security.injection.path-traversal-open.path-traversal-open"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-078/author_1.py",
+      "line": 8,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "python.lang.security.audit.subprocess-shell-true.subprocess-shell-true"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-078/codeql_1.py",
+      "line": 12,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "python.django.security.injection.command.command-injection-os-system.command-injection-os-system"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-078/codeql_1.py",
+      "line": 13,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "python.flask.security.injection.os-system-injection.os-system-injection"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-078/codeql_1.py",
+      "line": 13,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "python.lang.security.dangerous-system-call.dangerous-system-call"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-079/codeql_1.py",
+      "line": 13,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "python.flask.security.xss.audit.direct-use-of-jinja2.direct-use-of-jinja2"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-079/codeql_1.py",
+      "line": 15,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "python.flask.security.xss.audit.direct-use-of-jinja2.direct-use-of-jinja2"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-079/codeql_2.py",
+      "line": 12,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "python.flask.security.audit.xss.make-response-with-unknown-content.make-response-with-unknown-content"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-079/sonar_1.py",
+      "line": 14,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "python.flask.security.audit.xss.make-response-with-unknown-content.make-response-with-unknown-content"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-080/author_1.py",
+      "line": 12,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "python.flask.security.audit.xss.make-response-with-unknown-content.make-response-with-unknown-content"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-080/author_1.py",
+      "line": 12,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "python.django.security.injection.raw-html-format.raw-html-format"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-080/author_1.py",
+      "line": 12,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "python.flask.security.injection.raw-html-concat.raw-html-format"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-089/author_1.py",
+      "line": 16,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "python.lang.security.audit.formatted-sql-query.formatted-sql-query"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-089/author_1.py",
+      "line": 16,
+      "cwe": 89,
+      "severity": "ERROR",
+      "rule_id": "python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-089/codeql_1.py",
+      "line": 16,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "python.lang.security.audit.formatted-sql-query.formatted-sql-query"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-089/codeql_1.py",
+      "line": 16,
+      "cwe": 89,
+      "severity": "ERROR",
+      "rule_id": "python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-094/codeql_1.py",
+      "line": 13,
+      "cwe": 95,
+      "severity": "ERROR",
+      "rule_id": "python.flask.security.injection.user-exec.exec-injection"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-094/codeql_1.py",
+      "line": 13,
+      "cwe": 95,
+      "severity": "WARNING",
+      "rule_id": "python.lang.security.audit.exec-detected.exec-detected"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-094/sonar_1.py",
+      "line": 11,
+      "cwe": 95,
+      "severity": "WARNING",
+      "rule_id": "python.django.security.injection.code.user-exec-format-string.user-exec-format-string"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-094/sonar_1.py",
+      "line": 12,
+      "cwe": 95,
+      "severity": "ERROR",
+      "rule_id": "python.flask.security.injection.user-exec.exec-injection"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-094/sonar_1.py",
+      "line": 12,
+      "cwe": 95,
+      "severity": "WARNING",
+      "rule_id": "python.lang.security.audit.exec-detected.exec-detected"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-095/author_1.py",
+      "line": 5,
+      "cwe": 95,
+      "severity": "WARNING",
+      "rule_id": "python.lang.security.audit.eval-detected.eval-detected"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-116/author_1.py",
+      "line": 14,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "python.django.security.injection.command.command-injection-os-system.command-injection-os-system"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-116/author_1.py",
+      "line": 15,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "python.flask.security.injection.os-system-injection.os-system-injection"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-116/author_1.py",
+      "line": 15,
+      "cwe": 78,
+      "severity": "ERROR",
+      "rule_id": "python.lang.security.dangerous-system-call.dangerous-system-call"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-200/author_1.py",
+      "line": 15,
+      "cwe": 89,
+      "severity": "ERROR",
+      "rule_id": "python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-215/codeql_1.py",
+      "line": 12,
+      "cwe": 668,
+      "severity": "WARNING",
+      "rule_id": "python.flask.security.audit.app-run-security-config.avoid_using_app_run_directly"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-215/codeql_1.py",
+      "line": 12,
+      "cwe": 489,
+      "severity": "WARNING",
+      "rule_id": "python.flask.security.audit.debug-enabled.debug-enabled"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-295/codeql_1.py",
+      "line": 4,
+      "cwe": 295,
+      "severity": "ERROR",
+      "rule_id": "python.requests.security.disabled-cert-validation.disabled-cert-validation"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-319/author_1.py",
+      "line": 29,
+      "cwe": 614,
+      "severity": "WARNING",
+      "rule_id": "python.flask.security.audit.secure-set-cookie.secure-set-cookie"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-319/author_2.py",
+      "line": 11,
+      "cwe": 319,
+      "severity": "INFO",
+      "rule_id": "python.lang.security.audit.insecure-transport.ftplib.use-ftp-tls.use-ftp-tls"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-326/author_1.py",
+      "line": 9,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "python.pycryptodome.security.insufficient-rsa-key-size.insufficient-rsa-key-size"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-326/author_2.py",
+      "line": 9,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "python.pycryptodome.security.insufficient-dsa-key-size.insufficient-dsa-key-size"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-327/codeql_1.py",
+      "line": 9,
+      "cwe": 327,
+      "severity": "WARNING",
+      "rule_id": "python.pycryptodome.security.insecure-cipher-algorithm-des.insecure-cipher-algorithm-des"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-327/codeql_2.py",
+      "line": 11,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "python.lang.security.audit.ssl-wrap-socket-is-deprecated.ssl-wrap-socket-is-deprecated"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-347/sonar_2.py",
+      "line": 8,
+      "cwe": 287,
+      "severity": "ERROR",
+      "rule_id": "python.jwt.security.unverified-jwt-decode.unverified-jwt-decode"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-425/author_1.py",
+      "line": 12,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "python.django.security.audit.xss.direct-use-of-httpresponse.direct-use-of-httpresponse"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-502/author_1.py",
+      "line": 13,
+      "cwe": 502,
+      "severity": "WARNING",
+      "rule_id": "python.lang.security.deserialization.pickle.avoid-pickle"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-502/codeql_1.py",
+      "line": 9,
+      "cwe": 502,
+      "severity": "WARNING",
+      "rule_id": "python.lang.security.deserialization.pickle.avoid-pickle"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-502/mitre_1.py",
+      "line": 11,
+      "cwe": 502,
+      "severity": "WARNING",
+      "rule_id": "python.lang.security.deserialization.pickle.avoid-cPickle"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-502/mitre_1.py",
+      "line": 11,
+      "cwe": 502,
+      "severity": "WARNING",
+      "rule_id": "python.lang.security.deserialization.pickle.avoid-pickle"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-502/sonar_1.py",
+      "line": 11,
+      "cwe": 502,
+      "severity": "ERROR",
+      "rule_id": "python.flask.security.insecure-deserialization.insecure-deserialization"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-522/pearce_1.py",
+      "line": 17,
+      "cwe": 327,
+      "severity": "WARNING",
+      "rule_id": "python.lang.security.audit.md5-used-as-password.md5-used-as-password"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-601/codeql_1.py",
+      "line": 11,
+      "cwe": 601,
+      "severity": "ERROR",
+      "rule_id": "python.flask.security.open-redirect.open-redirect"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-601/sonar_1.py",
+      "line": 7,
+      "cwe": 601,
+      "severity": "WARNING",
+      "rule_id": "python.django.security.injection.open-redirect.open-redirect"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-601/sonar_2.py",
+      "line": 11,
+      "cwe": 601,
+      "severity": "ERROR",
+      "rule_id": "python.flask.security.open-redirect.open-redirect"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-605/author_1.py",
+      "line": 8,
+      "cwe": 200,
+      "severity": "INFO",
+      "rule_id": "python.lang.security.audit.network.bind.avoid-bind-to-all-interfaces"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-732/author_1.py",
+      "line": 10,
+      "cwe": 276,
+      "severity": "WARNING",
+      "rule_id": "python.lang.security.audit.insecure-file-permissions.insecure-file-permissions"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-759/mitre_1.py",
+      "line": 8,
+      "cwe": 327,
+      "severity": "WARNING",
+      "rule_id": "python.lang.security.insecure-hash-function.insecure-hash-function"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-918/codeql_1.py",
+      "line": 12,
+      "cwe": 918,
+      "severity": "WARNING",
+      "rule_id": "python.django.security.injection.tainted-url-host.tainted-url-host"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-918/codeql_1.py",
+      "line": 12,
+      "cwe": 918,
+      "severity": "WARNING",
+      "rule_id": "python.flask.security.injection.tainted-url-host.tainted-url-host"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-918/codeql_2.py",
+      "line": 14,
+      "cwe": 918,
+      "severity": "ERROR",
+      "rule_id": "python.django.security.injection.ssrf.ssrf-injection-requests.ssrf-injection-requests"
+    }
+  ]
+}

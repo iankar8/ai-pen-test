@@ -1,0 +1,77 @@
+{
+  "tool": "ai_pen_test",
+  "tool_version": "shipped-engine (handlers/sast_analyzer.py)",
+  "config": "MOCK (dry-run); real engine NOT invoked",
+  "edition": "LLM",
+  "target_root": "/Users/iankar/ai-pen-test/benchmark/datasets/SecurityEval",
+  "invocation": "ai_pen_test_runner.py --dry-run over 10 files",
+  "timestamp": "2026-07-14T00:21:50.815515+00:00",
+  "dry_run": true,
+  "finding_count": 8,
+  "findings": [
+    {
+      "file": "Testcases_Insecure_Code/CWE-841/mitre_1.py",
+      "line": 37,
+      "cwe": 502,
+      "severity": "CRITICAL",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-090/codeql_1.py",
+      "line": 20,
+      "cwe": 611,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-502/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-116/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-941/mitre_1.py",
+      "line": 2,
+      "cwe": 79,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-385/mitre_1.py",
+      "line": 9,
+      "cwe": 643,
+      "severity": "CRITICAL",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-250/mitre_1.py",
+      "line": 12,
+      "cwe": 79,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-759/mitre_1.py",
+      "line": 40,
+      "cwe": 611,
+      "severity": "CRITICAL",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    }
+  ]
+}

@@ -1,0 +1,1086 @@
+{
+  "tool": "ai_pen_test",
+  "dataset": "securityeval",
+  "timestamp": "2026-07-14T00:09:38.853155+00:00",
+  "line_tolerance": 3,
+  "match_criteria": {
+    "file_cwe": "same file AND same CWE",
+    "line": "same file AND same CWE AND finding line within +/-3 of the labelled line (vulnerable entries only)"
+  },
+  "counts": {
+    "ground_truth_entries": 121,
+    "vulnerable": 121,
+    "non_vulnerable": 0,
+    "tool_findings": 104,
+    "vulnerable_entries_with_line_labels": 0
+  },
+  "notes": [
+    "SOURCE FINDINGS ARE A DRY-RUN/MOCK (dry_run=true): these scores validate the pipeline only and are NOT a real engine result.",
+    "line_match is null: no vulnerable ground-truth entry carries a line-level label, so strict line-match cannot be computed on this dataset (reported as PENDING, not fabricated).",
+    "dataset has no non-vulnerable samples: this is a RECALL-ONLY measurement; precision / FPR / Youden are null by construction."
+  ],
+  "file_cwe_match": {
+    "overall": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 118,
+      "tn": 0,
+      "precision": null,
+      "recall": 0.024793388429752067,
+      "f1": null,
+      "tpr": 0.024793388429752067,
+      "fpr": null,
+      "youden": null,
+      "notes": [
+        "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+      ]
+    },
+    "per_cwe": {
+      "20": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 6,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "22": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 4,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "78": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "79": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 3,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "80": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "89": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.5,
+        "f1": null,
+        "tpr": 0.5,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "90": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "94": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 3,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "95": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "99": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "113": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "116": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "117": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 3,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "193": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "200": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "209": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "215": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "250": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "252": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "259": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "269": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "283": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "285": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "295": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 3,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "306": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "319": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "321": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "326": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "327": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 2,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.5,
+        "f1": null,
+        "tpr": 0.5,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "329": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "330": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "331": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "339": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "347": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 3,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "367": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "377": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "379": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "385": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "400": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "406": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "414": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "425": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "434": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "454": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "462": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "477": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "502": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 4,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "521": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "522": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "595": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "601": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 5,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "605": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "611": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 6,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "641": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "643": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "703": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 3,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "730": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 3,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "732": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "759": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "760": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "776": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "798": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "827": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "835": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "841": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "918": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "941": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "943": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "1204": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      }
+    }
+  },
+  "line_match": null,
+  "findings_provenance": {
+    "tool_version": "shipped-engine (handlers/sast_analyzer.py)",
+    "config": "MOCK (dry-run); real engine NOT invoked",
+    "edition": "LLM",
+    "invocation": "ai_pen_test_runner.py --dry-run over 121 files",
+    "target_root": "/Users/iankar/ai-pen-test/benchmark/datasets/SecurityEval",
+    "dry_run": true,
+    "timestamp": "2026-07-14T00:07:05.339449+00:00"
+  }
+}

@@ -1,0 +1,845 @@
+{
+  "tool": "ai_pen_test",
+  "tool_version": "shipped-engine (handlers/sast_analyzer.py)",
+  "config": "MOCK (dry-run); real engine NOT invoked",
+  "edition": "LLM",
+  "target_root": "/Users/iankar/ai-pen-test/benchmark/datasets/SecurityEval",
+  "invocation": "ai_pen_test_runner.py --dry-run over 121 files",
+  "timestamp": "2026-07-14T00:07:05.339449+00:00",
+  "dry_run": true,
+  "finding_count": 104,
+  "findings": [
+    {
+      "file": "Testcases_Insecure_Code/CWE-020/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-020/author_2.py",
+      "line": 35,
+      "cwe": 327,
+      "severity": "CRITICAL",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-020/codeql_1.py",
+      "line": 20,
+      "cwe": 611,
+      "severity": "MEDIUM",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-020/codeql_2.py",
+      "line": 22,
+      "cwe": 79,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-020/codeql_3.py",
+      "line": 39,
+      "cwe": 643,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-020/codeql_4.py",
+      "line": 15,
+      "cwe": 327,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-022/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-022/author_2.py",
+      "line": 19,
+      "cwe": 643,
+      "severity": "CRITICAL",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-022/codeql_1.py",
+      "line": 15,
+      "cwe": 327,
+      "severity": "CRITICAL",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-022/codeql_2.py",
+      "line": 23,
+      "cwe": 78,
+      "severity": "MEDIUM",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-078/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-078/codeql_1.py",
+      "line": 30,
+      "cwe": 611,
+      "severity": "MEDIUM",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-079/codeql_1.py",
+      "line": 4,
+      "cwe": 22,
+      "severity": "CRITICAL",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-079/codeql_2.py",
+      "line": 17,
+      "cwe": 502,
+      "severity": "CRITICAL",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-080/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-089/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-089/codeql_1.py",
+      "line": 18,
+      "cwe": 90,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-090/codeql_1.py",
+      "line": 20,
+      "cwe": 611,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-090/codeql_2.py",
+      "line": 4,
+      "cwe": 22,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-094/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-094/codeql_1.py",
+      "line": 39,
+      "cwe": 643,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-094/sonar_1.py",
+      "line": 24,
+      "cwe": 22,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-095/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-099/sonar_1.py",
+      "line": 22,
+      "cwe": 79,
+      "severity": "CRITICAL",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-113/sonar_1.py",
+      "line": 19,
+      "cwe": 643,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-116/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-116/codeql_1.py",
+      "line": 27,
+      "cwe": 502,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-117/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-117/codeql_1.py",
+      "line": 10,
+      "cwe": 611,
+      "severity": "MEDIUM",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-117/sonar_1.py",
+      "line": 12,
+      "cwe": 79,
+      "severity": "CRITICAL",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-193/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-200/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-209/codeql_1.py",
+      "line": 9,
+      "cwe": 643,
+      "severity": "CRITICAL",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-215/codeql_1.py",
+      "line": 32,
+      "cwe": 79,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-250/mitre_1.py",
+      "line": 12,
+      "cwe": 79,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-252/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-259/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-259/author_2.py",
+      "line": 18,
+      "cwe": 90,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-269/mitre_1.py",
+      "line": 5,
+      "cwe": 327,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-283/mitre_1.py",
+      "line": 29,
+      "cwe": 643,
+      "severity": "MEDIUM",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-285/codeql_1.py",
+      "line": 37,
+      "cwe": 502,
+      "severity": "CRITICAL",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-295/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-295/author_2.py",
+      "line": 3,
+      "cwe": 78,
+      "severity": "CRITICAL",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-295/codeql_1.py",
+      "line": 37,
+      "cwe": 502,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-319/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-321/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-321/author_2.py",
+      "line": 4,
+      "cwe": 22,
+      "severity": "CRITICAL",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-326/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-326/author_2.py",
+      "line": 40,
+      "cwe": 611,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-327/codeql_1.py",
+      "line": 5,
+      "cwe": 327,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-327/codeql_4.py",
+      "line": 5,
+      "cwe": 327,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-330/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-331/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-347/sonar_1.py",
+      "line": 10,
+      "cwe": 611,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-347/sonar_3.py",
+      "line": 38,
+      "cwe": 90,
+      "severity": "CRITICAL",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-367/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-377/codeql_1.py",
+      "line": 3,
+      "cwe": 78,
+      "severity": "MEDIUM",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-379/sonar_1.py",
+      "line": 22,
+      "cwe": 79,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-385/mitre_1.py",
+      "line": 9,
+      "cwe": 643,
+      "severity": "CRITICAL",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-400/sonar_1.py",
+      "line": 14,
+      "cwe": 22,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-414/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-425/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-434/pearce_1.py",
+      "line": 15,
+      "cwe": 327,
+      "severity": "MEDIUM",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-434/pearce_2.py",
+      "line": 24,
+      "cwe": 22,
+      "severity": "CRITICAL",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-454/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-462/mitre_1.py",
+      "line": 35,
+      "cwe": 327,
+      "severity": "MEDIUM",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-477/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-502/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-502/mitre_1.py",
+      "line": 38,
+      "cwe": 90,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-502/sonar_1.py",
+      "line": 28,
+      "cwe": 90,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-521/sonar_1.py",
+      "line": 13,
+      "cwe": 78,
+      "severity": "MEDIUM",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-521/sonar_2.py",
+      "line": 12,
+      "cwe": 79,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-522/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-522/pearce_1.py",
+      "line": 27,
+      "cwe": 502,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-595/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-601/codeql_1.py",
+      "line": 25,
+      "cwe": 327,
+      "severity": "CRITICAL",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-601/sonar_1.py",
+      "line": 28,
+      "cwe": 90,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-601/sonar_2.py",
+      "line": 14,
+      "cwe": 22,
+      "severity": "CRITICAL",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-601/sonar_4.py",
+      "line": 24,
+      "cwe": 22,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-605/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-611/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-611/codeql_1.py",
+      "line": 2,
+      "cwe": 79,
+      "severity": "CRITICAL",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-611/sonar_2.py",
+      "line": 24,
+      "cwe": 22,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-611/sonar_3.py",
+      "line": 4,
+      "cwe": 22,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-611/sonar_4.py",
+      "line": 37,
+      "cwe": 502,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-641/sonar_1.py",
+      "line": 33,
+      "cwe": 78,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-643/codeql_1.py",
+      "line": 35,
+      "cwe": 327,
+      "severity": "CRITICAL",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-703/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-703/author_2.py",
+      "line": 12,
+      "cwe": 79,
+      "severity": "MEDIUM",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-730/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-730/codeql_1.py",
+      "line": 3,
+      "cwe": 78,
+      "severity": "CRITICAL",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-730/codeql_2.py",
+      "line": 22,
+      "cwe": 79,
+      "severity": "CRITICAL",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-732/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-759/mitre_1.py",
+      "line": 40,
+      "cwe": 611,
+      "severity": "CRITICAL",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-776/codeql_1.py",
+      "line": 8,
+      "cwe": 90,
+      "severity": "CRITICAL",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-798/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-798/codeql_1.py",
+      "line": 34,
+      "cwe": 22,
+      "severity": "MEDIUM",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-827/sonar_1.py",
+      "line": 27,
+      "cwe": 502,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-835/author_1.py",
+      "line": 7,
+      "cwe": 89,
+      "severity": "HIGH",
+      "rule_id": "MOCK-STUB",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-841/mitre_1.py",
+      "line": 37,
+      "cwe": 502,
+      "severity": "CRITICAL",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-918/codeql_1.py",
+      "line": 39,
+      "cwe": 643,
+      "severity": "CRITICAL",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-918/codeql_2.py",
+      "line": 4,
+      "cwe": 22,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-941/mitre_1.py",
+      "line": 2,
+      "cwe": 79,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-943/sonar_1.py",
+      "line": 38,
+      "cwe": 90,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    }
+  ]
+}

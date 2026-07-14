@@ -1,0 +1,93 @@
+{
+  "tool": "ai_pen_test",
+  "tool_version": "shipped-engine (handlers/sast_analyzer.py)",
+  "config": "MOCK (dry-run); real engine NOT invoked",
+  "edition": "LLM",
+  "target_root": "/Users/iankar/ai-pen-test/benchmark/datasets/BenchmarkJava",
+  "invocation": "ai_pen_test_runner.py --dry-run over 10 files",
+  "timestamp": "2026-07-14T00:21:50.889290+00:00",
+  "dry_run": true,
+  "finding_count": 10,
+  "findings": [
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00736.java",
+      "line": 33,
+      "cwe": 78,
+      "severity": "CRITICAL",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02296.java",
+      "line": 23,
+      "cwe": 78,
+      "severity": "MEDIUM",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01583.java",
+      "line": 10,
+      "cwe": 611,
+      "severity": "MEDIUM",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02104.java",
+      "line": 25,
+      "cwe": 327,
+      "severity": "MEDIUM",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01225.java",
+      "line": 2,
+      "cwe": 79,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00440.java",
+      "line": 14,
+      "cwe": 22,
+      "severity": "CRITICAL",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01273.java",
+      "line": 8,
+      "cwe": 90,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00632.java",
+      "line": 10,
+      "cwe": 611,
+      "severity": "MEDIUM",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00835.java",
+      "line": 27,
+      "cwe": 502,
+      "severity": "HIGH",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    },
+    {
+      "file": "src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00017.java",
+      "line": 8,
+      "cwe": 90,
+      "severity": "CRITICAL",
+      "rule_id": "MOCK-HASH",
+      "mock": true
+    }
+  ]
+}

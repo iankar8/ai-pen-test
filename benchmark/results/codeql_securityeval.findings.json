@@ -1,0 +1,1063 @@
+{
+  "tool": "codeql",
+  "tool_version": "2.26.0",
+  "config": "codeql database analyze <python-security-extended.qls> (build-mode=none)",
+  "edition": "OSS-suite",
+  "target_root": "/Users/iankar/ai-pen-test/benchmark/datasets/SecurityEval",
+  "invocation": "codeql database create --language=python --build-mode=none; analyze python-security-extended.qls",
+  "timestamp": "2026-07-14T00:15:06.792269+00:00",
+  "dry_run": false,
+  "finding_count": 150,
+  "findings": [
+    {
+      "file": "Testcases_Insecure_Code/CWE-094/codeql_1.py",
+      "line": 13,
+      "cwe": 94,
+      "severity": "WARNING",
+      "rule_id": "py/code-injection"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-094/sonar_1.py",
+      "line": 10,
+      "cwe": 94,
+      "severity": "WARNING",
+      "rule_id": "py/code-injection"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-094/sonar_1.py",
+      "line": 10,
+      "cwe": 94,
+      "severity": "WARNING",
+      "rule_id": "py/code-injection"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-094/sonar_1.py",
+      "line": 12,
+      "cwe": 94,
+      "severity": "WARNING",
+      "rule_id": "py/code-injection"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-209/codeql_1.py",
+      "line": 19,
+      "cwe": 209,
+      "severity": "WARNING",
+      "rule_id": "py/stack-trace-exposure"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-601/codeql_1.py",
+      "line": 11,
+      "cwe": 601,
+      "severity": "WARNING",
+      "rule_id": "py/url-redirection"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-601/codeql_1.py",
+      "line": 12,
+      "cwe": 601,
+      "severity": "WARNING",
+      "rule_id": "py/url-redirection"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-601/codeql_1.py",
+      "line": 11,
+      "cwe": 601,
+      "severity": "WARNING",
+      "rule_id": "py/url-redirection"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-020/codeql_3.py",
+      "line": 17,
+      "cwe": 601,
+      "severity": "WARNING",
+      "rule_id": "py/url-redirection"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-020/codeql_4.py",
+      "line": 13,
+      "cwe": 601,
+      "severity": "WARNING",
+      "rule_id": "py/url-redirection"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-601/sonar_2.py",
+      "line": 12,
+      "cwe": 601,
+      "severity": "WARNING",
+      "rule_id": "py/url-redirection"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-601/sonar_2.py",
+      "line": 9,
+      "cwe": 601,
+      "severity": "WARNING",
+      "rule_id": "py/url-redirection"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-601/sonar_2.py",
+      "line": 9,
+      "cwe": 601,
+      "severity": "WARNING",
+      "rule_id": "py/url-redirection"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-326/author_1.py",
+      "line": 9,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "py/weak-crypto-key"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-326/author_2.py",
+      "line": 9,
+      "cwe": 326,
+      "severity": "WARNING",
+      "rule_id": "py/weak-crypto-key"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-327/codeql_2.py",
+      "line": 11,
+      "cwe": 327,
+      "severity": "WARNING",
+      "rule_id": "py/insecure-default-protocol"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-327/codeql_1.py",
+      "line": 8,
+      "cwe": 327,
+      "severity": "WARNING",
+      "rule_id": "py/weak-cryptographic-algorithm"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-327/codeql_1.py",
+      "line": 8,
+      "cwe": 327,
+      "severity": "WARNING",
+      "rule_id": "py/weak-cryptographic-algorithm"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-327/codeql_1.py",
+      "line": 10,
+      "cwe": 327,
+      "severity": "WARNING",
+      "rule_id": "py/weak-cryptographic-algorithm"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-295/author_2.py",
+      "line": 7,
+      "cwe": 327,
+      "severity": "WARNING",
+      "rule_id": "py/insecure-protocol"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-327/codeql_2.py",
+      "line": 11,
+      "cwe": 327,
+      "severity": "WARNING",
+      "rule_id": "py/insecure-protocol"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-327/codeql_2.py",
+      "line": 10,
+      "cwe": 327,
+      "severity": "WARNING",
+      "rule_id": "py/insecure-protocol"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-297/sonar_3.py",
+      "line": 8,
+      "cwe": 327,
+      "severity": "WARNING",
+      "rule_id": "py/insecure-protocol"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-321/author_1.py",
+      "line": 6,
+      "cwe": 327,
+      "severity": "WARNING",
+      "rule_id": "py/weak-sensitive-data-hashing"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-327/codeql_3.py",
+      "line": 8,
+      "cwe": 327,
+      "severity": "WARNING",
+      "rule_id": "py/weak-sensitive-data-hashing"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-327/codeql_4.py",
+      "line": 7,
+      "cwe": 327,
+      "severity": "WARNING",
+      "rule_id": "py/weak-sensitive-data-hashing"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-327/codeql_4.py",
+      "line": 7,
+      "cwe": 327,
+      "severity": "WARNING",
+      "rule_id": "py/weak-sensitive-data-hashing"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-327/codeql_4.py",
+      "line": 8,
+      "cwe": 327,
+      "severity": "WARNING",
+      "rule_id": "py/weak-sensitive-data-hashing"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-759/mitre_1.py",
+      "line": 6,
+      "cwe": 327,
+      "severity": "WARNING",
+      "rule_id": "py/weak-sensitive-data-hashing"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-759/mitre_1.py",
+      "line": 9,
+      "cwe": 327,
+      "severity": "WARNING",
+      "rule_id": "py/weak-sensitive-data-hashing"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-759/mitre_1.py",
+      "line": 6,
+      "cwe": 327,
+      "severity": "WARNING",
+      "rule_id": "py/weak-sensitive-data-hashing"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-522/pearce_1.py",
+      "line": 16,
+      "cwe": 327,
+      "severity": "WARNING",
+      "rule_id": "py/weak-sensitive-data-hashing"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-522/pearce_1.py",
+      "line": 21,
+      "cwe": 327,
+      "severity": "WARNING",
+      "rule_id": "py/weak-sensitive-data-hashing"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-522/pearce_1.py",
+      "line": 17,
+      "cwe": 327,
+      "severity": "WARNING",
+      "rule_id": "py/weak-sensitive-data-hashing"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-918/codeql_1.py",
+      "line": 13,
+      "cwe": 918,
+      "severity": "WARNING",
+      "rule_id": "py/full-ssrf"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-918/codeql_1.py",
+      "line": 16,
+      "cwe": 918,
+      "severity": "WARNING",
+      "rule_id": "py/full-ssrf"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-918/codeql_1.py",
+      "line": 13,
+      "cwe": 918,
+      "severity": "WARNING",
+      "rule_id": "py/full-ssrf"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-319/author_1.py",
+      "line": 29,
+      "cwe": 614,
+      "severity": "WARNING",
+      "rule_id": "py/insecure-cookie"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-312/codeql_1.py",
+      "line": 12,
+      "cwe": 614,
+      "severity": "WARNING",
+      "rule_id": "py/insecure-cookie"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-522/pearce_1.py",
+      "line": 18,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "py/sql-injection"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-522/pearce_1.py",
+      "line": 21,
+      "cwe": 89,
+      "severity": "WARNING",
+      "rule_id": "py/sql-injection"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-020/codeql_3.py",
+      "line": 15,
+      "cwe": 20,
+      "severity": "WARNING",
+      "rule_id": "py/incomplete-hostname-regexp"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-312/codeql_1.py",
+      "line": 12,
+      "cwe": 20,
+      "severity": "WARNING",
+      "rule_id": "py/cookie-injection"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-020/codeql_4.py",
+      "line": 12,
+      "cwe": 20,
+      "severity": "WARNING",
+      "rule_id": "py/incomplete-url-substring-sanitization"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-215/codeql_1.py",
+      "line": 12,
+      "cwe": 215,
+      "severity": "WARNING",
+      "rule_id": "py/flask-debug"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-215/codeql_1.py",
+      "line": 13,
+      "cwe": 215,
+      "severity": "WARNING",
+      "rule_id": "py/flask-debug"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-090/codeql_1.py",
+      "line": 24,
+      "cwe": 90,
+      "severity": "WARNING",
+      "rule_id": "py/ldap-injection"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-090/codeql_1.py",
+      "line": 24,
+      "cwe": 90,
+      "severity": "WARNING",
+      "rule_id": "py/ldap-injection"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-090/codeql_1.py",
+      "line": 22,
+      "cwe": 90,
+      "severity": "WARNING",
+      "rule_id": "py/ldap-injection"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-090/codeql_1.py",
+      "line": 22,
+      "cwe": 90,
+      "severity": "WARNING",
+      "rule_id": "py/ldap-injection"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-090/codeql_1.py",
+      "line": 18,
+      "cwe": 90,
+      "severity": "WARNING",
+      "rule_id": "py/ldap-injection"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-090/codeql_1.py",
+      "line": 18,
+      "cwe": 90,
+      "severity": "WARNING",
+      "rule_id": "py/ldap-injection"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-090/codeql_2.py",
+      "line": 19,
+      "cwe": 90,
+      "severity": "WARNING",
+      "rule_id": "py/ldap-injection"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-090/codeql_2.py",
+      "line": 22,
+      "cwe": 90,
+      "severity": "WARNING",
+      "rule_id": "py/ldap-injection"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-090/codeql_2.py",
+      "line": 22,
+      "cwe": 90,
+      "severity": "WARNING",
+      "rule_id": "py/ldap-injection"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-090/codeql_2.py",
+      "line": 18,
+      "cwe": 90,
+      "severity": "WARNING",
+      "rule_id": "py/ldap-injection"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-090/codeql_2.py",
+      "line": 18,
+      "cwe": 90,
+      "severity": "WARNING",
+      "rule_id": "py/ldap-injection"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-605/author_1.py",
+      "line": 8,
+      "cwe": 200,
+      "severity": "WARNING",
+      "rule_id": "py/bind-socket-all-network-interfaces"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-605/author_1.py",
+      "line": 9,
+      "cwe": 200,
+      "severity": "WARNING",
+      "rule_id": "py/bind-socket-all-network-interfaces"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-605/author_1.py",
+      "line": 8,
+      "cwe": 200,
+      "severity": "WARNING",
+      "rule_id": "py/bind-socket-all-network-interfaces"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-941/mitre_1.py",
+      "line": 8,
+      "cwe": 200,
+      "severity": "WARNING",
+      "rule_id": "py/bind-socket-all-network-interfaces"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-377/codeql_1.py",
+      "line": 7,
+      "cwe": 377,
+      "severity": "WARNING",
+      "rule_id": "py/insecure-temporary-file"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-377/codeql_1.py",
+      "line": 7,
+      "cwe": 377,
+      "severity": "WARNING",
+      "rule_id": "py/insecure-temporary-file"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-377/codeql_1.py",
+      "line": 8,
+      "cwe": 377,
+      "severity": "WARNING",
+      "rule_id": "py/insecure-temporary-file"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-379/sonar_1.py",
+      "line": 10,
+      "cwe": 377,
+      "severity": "WARNING",
+      "rule_id": "py/insecure-temporary-file"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-116/codeql_1.py",
+      "line": 11,
+      "cwe": 116,
+      "severity": "WARNING",
+      "rule_id": "py/bad-tag-filter"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-116/codeql_1.py",
+      "line": 7,
+      "cwe": 116,
+      "severity": "WARNING",
+      "rule_id": "py/bad-tag-filter"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-776/codeql_1.py",
+      "line": 14,
+      "cwe": 776,
+      "severity": "WARNING",
+      "rule_id": "py/xml-bomb"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-776/codeql_1.py",
+      "line": 12,
+      "cwe": 776,
+      "severity": "WARNING",
+      "rule_id": "py/xml-bomb"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-776/codeql_1.py",
+      "line": 12,
+      "cwe": 776,
+      "severity": "WARNING",
+      "rule_id": "py/xml-bomb"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-312/codeql_1.py",
+      "line": 12,
+      "cwe": 312,
+      "severity": "WARNING",
+      "rule_id": "py/clear-text-storage-sensitive-data"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-020/codeql_2.py",
+      "line": 15,
+      "cwe": 502,
+      "severity": "WARNING",
+      "rule_id": "py/unsafe-deserialization"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-020/codeql_2.py",
+      "line": 14,
+      "cwe": 502,
+      "severity": "WARNING",
+      "rule_id": "py/unsafe-deserialization"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-020/codeql_2.py",
+      "line": 15,
+      "cwe": 502,
+      "severity": "WARNING",
+      "rule_id": "py/unsafe-deserialization"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-502/sonar_1.py",
+      "line": 11,
+      "cwe": 502,
+      "severity": "WARNING",
+      "rule_id": "py/unsafe-deserialization"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-502/sonar_1.py",
+      "line": 11,
+      "cwe": 502,
+      "severity": "WARNING",
+      "rule_id": "py/unsafe-deserialization"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-502/sonar_1.py",
+      "line": 11,
+      "cwe": 502,
+      "severity": "WARNING",
+      "rule_id": "py/unsafe-deserialization"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-730/codeql_1.py",
+      "line": 12,
+      "cwe": 730,
+      "severity": "WARNING",
+      "rule_id": "py/regex-injection"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-730/codeql_1.py",
+      "line": 13,
+      "cwe": 730,
+      "severity": "WARNING",
+      "rule_id": "py/regex-injection"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-730/codeql_1.py",
+      "line": 13,
+      "cwe": 730,
+      "severity": "WARNING",
+      "rule_id": "py/regex-injection"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-730/codeql_2.py",
+      "line": 12,
+      "cwe": 730,
+      "severity": "WARNING",
+      "rule_id": "py/regex-injection"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-730/codeql_2.py",
+      "line": 11,
+      "cwe": 730,
+      "severity": "WARNING",
+      "rule_id": "py/regex-injection"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-400/sonar_1.py",
+      "line": 18,
+      "cwe": 730,
+      "severity": "WARNING",
+      "rule_id": "py/regex-injection"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-400/sonar_1.py",
+      "line": 13,
+      "cwe": 730,
+      "severity": "WARNING",
+      "rule_id": "py/regex-injection"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-319/author_1.py",
+      "line": 29,
+      "cwe": 1004,
+      "severity": "WARNING",
+      "rule_id": "py/client-exposed-cookie"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-312/codeql_1.py",
+      "line": 12,
+      "cwe": 1004,
+      "severity": "WARNING",
+      "rule_id": "py/client-exposed-cookie"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-312/codeql_1.py",
+      "line": 17,
+      "cwe": 1004,
+      "severity": "WARNING",
+      "rule_id": "py/client-exposed-cookie"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-611/author_1.py",
+      "line": 15,
+      "cwe": 22,
+      "severity": "WARNING",
+      "rule_id": "py/path-injection"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-022/author_1.py",
+      "line": 13,
+      "cwe": 22,
+      "severity": "WARNING",
+      "rule_id": "py/path-injection"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-022/codeql_1.py",
+      "line": 13,
+      "cwe": 22,
+      "severity": "WARNING",
+      "rule_id": "py/path-injection"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-776/codeql_1.py",
+      "line": 12,
+      "cwe": 22,
+      "severity": "WARNING",
+      "rule_id": "py/path-injection"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-434/pearce_1.py",
+      "line": 12,
+      "cwe": 22,
+      "severity": "WARNING",
+      "rule_id": "py/path-injection"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-434/pearce_1.py",
+      "line": 12,
+      "cwe": 22,
+      "severity": "WARNING",
+      "rule_id": "py/path-injection"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-434/pearce_2.py",
+      "line": 16,
+      "cwe": 22,
+      "severity": "WARNING",
+      "rule_id": "py/path-injection"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-434/pearce_2.py",
+      "line": 15,
+      "cwe": 22,
+      "severity": "WARNING",
+      "rule_id": "py/path-injection"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-641/sonar_1.py",
+      "line": 13,
+      "cwe": 22,
+      "severity": "WARNING",
+      "rule_id": "py/path-injection"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-641/sonar_1.py",
+      "line": 13,
+      "cwe": 22,
+      "severity": "WARNING",
+      "rule_id": "py/path-injection"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-099/sonar_1.py",
+      "line": 12,
+      "cwe": 22,
+      "severity": "WARNING",
+      "rule_id": "py/path-injection"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-099/sonar_1.py",
+      "line": 12,
+      "cwe": 22,
+      "severity": "WARNING",
+      "rule_id": "py/path-injection"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-641/sonar_1.py",
+      "line": 13,
+      "cwe": 22,
+      "severity": "WARNING",
+      "rule_id": "py/path-injection"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-099/sonar_1.py",
+      "line": 13,
+      "cwe": 22,
+      "severity": "WARNING",
+      "rule_id": "py/path-injection"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-611/author_1.py",
+      "line": 17,
+      "cwe": 611,
+      "severity": "WARNING",
+      "rule_id": "py/xxe"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-611/author_1.py",
+      "line": 15,
+      "cwe": 611,
+      "severity": "WARNING",
+      "rule_id": "py/xxe"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-611/author_1.py",
+      "line": 15,
+      "cwe": 611,
+      "severity": "WARNING",
+      "rule_id": "py/xxe"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-611/codeql_1.py",
+      "line": 12,
+      "cwe": 611,
+      "severity": "WARNING",
+      "rule_id": "py/xxe"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-611/codeql_1.py",
+      "line": 12,
+      "cwe": 611,
+      "severity": "WARNING",
+      "rule_id": "py/xxe"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-611/codeql_1.py",
+      "line": 13,
+      "cwe": 611,
+      "severity": "WARNING",
+      "rule_id": "py/xxe"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-116/author_1.py",
+      "line": 15,
+      "cwe": 78,
+      "severity": "WARNING",
+      "rule_id": "py/command-line-injection"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-078/codeql_1.py",
+      "line": 13,
+      "cwe": 78,
+      "severity": "WARNING",
+      "rule_id": "py/command-line-injection"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-643/sonar_1.py",
+      "line": 17,
+      "cwe": 643,
+      "severity": "WARNING",
+      "rule_id": "py/xpath-injection"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-080/author_1.py",
+      "line": 11,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "py/reflective-xss"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-080/author_1.py",
+      "line": 12,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "py/reflective-xss"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-020/codeql_1.py",
+      "line": 10,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "py/reflective-xss"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-020/codeql_1.py",
+      "line": 12,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "py/reflective-xss"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-918/codeql_1.py",
+      "line": 14,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "py/reflective-xss"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-117/codeql_1.py",
+      "line": 16,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "py/reflective-xss"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-312/codeql_1.py",
+      "line": 11,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "py/reflective-xss"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-918/codeql_1.py",
+      "line": 18,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "py/reflective-xss"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-918/codeql_1.py",
+      "line": 14,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "py/reflective-xss"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-020/codeql_1.py",
+      "line": 10,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "py/reflective-xss"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-312/codeql_1.py",
+      "line": 14,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "py/reflective-xss"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-020/codeql_2.py",
+      "line": 16,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "py/reflective-xss"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-020/codeql_2.py",
+      "line": 15,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "py/reflective-xss"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-079/codeql_2.py",
+      "line": 11,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "py/reflective-xss"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-020/codeql_2.py",
+      "line": 16,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "py/reflective-xss"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-079/codeql_2.py",
+      "line": 11,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "py/reflective-xss"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-918/codeql_2.py",
+      "line": 17,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "py/reflective-xss"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-918/codeql_2.py",
+      "line": 14,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "py/reflective-xss"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-918/codeql_2.py",
+      "line": 16,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "py/reflective-xss"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-079/codeql_2.py",
+      "line": 12,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "py/reflective-xss"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-079/sonar_1.py",
+      "line": 14,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "py/reflective-xss"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-117/sonar_1.py",
+      "line": 11,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "py/reflective-xss"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-079/sonar_1.py",
+      "line": 16,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "py/reflective-xss"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-079/sonar_1.py",
+      "line": 14,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "py/reflective-xss"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-113/sonar_1.py",
+      "line": 13,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "py/reflective-xss"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-918/codeql_2.py",
+      "line": 16,
+      "cwe": 918,
+      "severity": "WARNING",
+      "rule_id": "py/partial-ssrf"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-918/codeql_2.py",
+      "line": 13,
+      "cwe": 918,
+      "severity": "WARNING",
+      "rule_id": "py/partial-ssrf"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-918/codeql_2.py",
+      "line": 14,
+      "cwe": 918,
+      "severity": "WARNING",
+      "rule_id": "py/partial-ssrf"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-732/author_1.py",
+      "line": 10,
+      "cwe": 732,
+      "severity": "WARNING",
+      "rule_id": "py/overly-permissive-file"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-269/mitre_1.py",
+      "line": 17,
+      "cwe": 732,
+      "severity": "WARNING",
+      "rule_id": "py/overly-permissive-file"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-295/codeql_1.py",
+      "line": 4,
+      "cwe": 295,
+      "severity": "WARNING",
+      "rule_id": "py/request-without-cert-validation"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-117/codeql_1.py",
+      "line": 15,
+      "cwe": 117,
+      "severity": "WARNING",
+      "rule_id": "py/log-injection"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-117/codeql_1.py",
+      "line": 15,
+      "cwe": 117,
+      "severity": "WARNING",
+      "rule_id": "py/log-injection"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-117/codeql_1.py",
+      "line": 15,
+      "cwe": 117,
+      "severity": "WARNING",
+      "rule_id": "py/log-injection"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-022/codeql_2.py",
+      "line": 8,
+      "cwe": 22,
+      "severity": "WARNING",
+      "rule_id": "py/tarslip"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-022/codeql_2.py",
+      "line": 11,
+      "cwe": 22,
+      "severity": "WARNING",
+      "rule_id": "py/tarslip"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-022/codeql_2.py",
+      "line": 8,
+      "cwe": 22,
+      "severity": "WARNING",
+      "rule_id": "py/tarslip"
+    },
+    {
+      "file": "Testcases_InCoder/CWE-079/codeql_1.py",
+      "line": 13,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "py/jinja2/autoescape-false"
+    },
+    {
+      "file": "Testcases_Insecure_Code/CWE-079/codeql_1.py",
+      "line": 13,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "py/jinja2/autoescape-false"
+    },
+    {
+      "file": "Testcases_Copilot/CWE-079/codeql_1.py",
+      "line": 13,
+      "cwe": 79,
+      "severity": "WARNING",
+      "rule_id": "py/jinja2/autoescape-false"
+    }
+  ]
+}

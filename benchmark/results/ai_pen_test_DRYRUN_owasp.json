@@ -1,0 +1,206 @@
+{
+  "tool": "ai_pen_test_DRYRUN",
+  "dataset": "owasp",
+  "timestamp": "2026-07-14T00:21:50.922954+00:00",
+  "line_tolerance": 3,
+  "match_criteria": {
+    "file_cwe": "same file AND same CWE",
+    "line": "same file AND same CWE AND finding line within +/-3 of the labelled line (vulnerable entries only)"
+  },
+  "counts": {
+    "ground_truth_entries": 10,
+    "vulnerable": 4,
+    "non_vulnerable": 6,
+    "tool_findings": 10,
+    "vulnerable_entries_with_line_labels": 0
+  },
+  "notes": [
+    "SOURCE FINDINGS ARE A DRY-RUN/MOCK (dry_run=true): these scores validate the pipeline only and are NOT a real engine result.",
+    "line_match is null: no vulnerable ground-truth entry carries a line-level label, so strict line-match cannot be computed on this dataset (reported as PENDING, not fabricated)."
+  ],
+  "file_cwe_match": {
+    "overall": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 4,
+      "tn": 6,
+      "precision": null,
+      "recall": 0.0,
+      "f1": null,
+      "tpr": 0.0,
+      "fpr": 0.0,
+      "youden": 0.0,
+      "notes": [
+        "no positive predictions in this bucket; precision undefined"
+      ]
+    },
+    "per_cwe": {
+      "78": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "79": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "89": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 1,
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "tpr": null,
+        "fpr": 0.0,
+        "youden": null,
+        "notes": [
+          "no positive predictions in this bucket; precision undefined",
+          "no vulnerable samples in this bucket; recall undefined"
+        ]
+      },
+      "90": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 1,
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "tpr": null,
+        "fpr": 0.0,
+        "youden": null,
+        "notes": [
+          "no positive predictions in this bucket; precision undefined",
+          "no vulnerable samples in this bucket; recall undefined"
+        ]
+      },
+      "327": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 1,
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "tpr": null,
+        "fpr": 0.0,
+        "youden": null,
+        "notes": [
+          "no positive predictions in this bucket; precision undefined",
+          "no vulnerable samples in this bucket; recall undefined"
+        ]
+      },
+      "328": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 1,
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "tpr": null,
+        "fpr": 0.0,
+        "youden": null,
+        "notes": [
+          "no positive predictions in this bucket; precision undefined",
+          "no vulnerable samples in this bucket; recall undefined"
+        ]
+      },
+      "330": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "501": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 1,
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "tpr": null,
+        "fpr": 0.0,
+        "youden": null,
+        "notes": [
+          "no positive predictions in this bucket; precision undefined",
+          "no vulnerable samples in this bucket; recall undefined"
+        ]
+      },
+      "614": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "tn": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": null,
+        "tpr": 0.0,
+        "fpr": null,
+        "youden": null,
+        "notes": [
+          "no non-vulnerable samples in this bucket; precision/FPR/Youden undefined \u2014 recall only"
+        ]
+      },
+      "643": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 1,
+        "precision": null,
+        "recall": null,
+        "f1": null,
+        "tpr": null,
+        "fpr": 0.0,
+        "youden": null,
+        "notes": [
+          "no positive predictions in this bucket; precision undefined",
+          "no vulnerable samples in this bucket; recall undefined"
+        ]
+      }
+    }
+  },
+  "line_match": null,
+  "findings_provenance": {
+    "tool_version": "shipped-engine (handlers/sast_analyzer.py)",
+    "config": "MOCK (dry-run); real engine NOT invoked",
+    "edition": "LLM",
+    "invocation": "ai_pen_test_runner.py --dry-run over 10 files",
+    "target_root": "/Users/iankar/ai-pen-test/benchmark/datasets/BenchmarkJava",
+    "dry_run": true,
+    "timestamp": "2026-07-14T00:21:50.889290+00:00"
+  }
+}

@@ -57,6 +57,7 @@ class OpenRouterClient:
         'claude-sonnet-4.5': 'anthropic/claude-sonnet-4.5',
         'claude-opus-4': 'anthropic/claude-opus-4',
         'claude-sonnet-4': 'anthropic/claude-sonnet-4',
+        'gpt-5.6-sol': 'openai/gpt-5.6-sol',  # OpenAI flagship (2026-07)
         'gpt4': 'openai/gpt-4-turbo',
         'gpt4o': 'openai/gpt-4o',
         'gpt4o-mini': 'openai/gpt-4o-mini',
@@ -73,6 +74,7 @@ class OpenRouterClient:
         'anthropic/claude-sonnet-4.5': (3.00, 15.00),
         'anthropic/claude-opus-4': (15.00, 75.00),
         'anthropic/claude-sonnet-4': (3.00, 15.00),
+        'openai/gpt-5.6-sol': (5.00, 30.00),
         'openai/gpt-4-turbo': (10.00, 30.00),
         'openai/gpt-4o': (2.50, 10.00),
         'openai/gpt-4o-mini': (0.15, 0.60),
@@ -99,6 +101,15 @@ class OpenRouterClient:
             output_cost=15.00,
             context_length=200000,
             recommended_for=['SAST', 'semantic_analysis', 'complex_reasoning', 'fastest']
+        ),
+        'gpt-5.6-sol': ModelConfig(
+            id='openai/gpt-5.6-sol',
+            name='GPT-5.6 Sol',
+            provider='OpenAI',
+            input_cost=5.00,
+            output_cost=30.00,
+            context_length=1050000,
+            recommended_for=['SAST', 'semantic_analysis', 'complex_reasoning']
         ),
         'gpt4o': ModelConfig(
             id='openai/gpt-4o',

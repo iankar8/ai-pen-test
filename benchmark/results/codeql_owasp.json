@@ -1,0 +1,12 @@
+{
+  "status": "PENDING - run locally, see README",
+  "tool": "codeql",
+  "dataset": "owasp",
+  "reason": "CodeQL Java DB build could not run in this environment: BenchmarkJava is a Maven project and neither a JDK nor Maven is installed on this host (java -version reports 'Unable to locate a Java Runtime'; mvn not found).",
+  "attempts": [
+    {"build_mode": "autobuild", "exit_code": 254, "error": "autobuild.sh failed; requires Maven + JDK to compile the pom.xml project (CODEQL_JAVA_HOME/JDK + mvn absent)"},
+    {"build_mode": "none", "exit_code": 32, "error": "CodeQL detected Java but could not process any of it using the 'none' build mode ('no source code seen during build') — the Java extractor needs a JDK"}
+  ],
+  "how_to_complete": "Install a JDK 17+ and Maven (e.g. `brew install openjdk maven`), then re-run: PATH=benchmark/tools/codeql:$PATH python benchmark/runners/codeql_runner.py --index benchmark/datasets/owasp_subset.json --target-root benchmark/datasets/BenchmarkJava --language java --build-mode autobuild --out benchmark/results/codeql_owasp.findings.json ; then score.py.",
+  "note": "NOT fabricated. No CodeQL Java numbers are reported because the database could not be built here."
+}
